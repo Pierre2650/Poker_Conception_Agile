@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 
 /*
-@file
-@brief Test Description: Script pour tester l'integration Continue.
-@author Larmat jean
- */
+*@file
+*@brief Test Description: Script pour tester l'integration Continue.
+*@author Larmat jean
+*/
 
 
 public class UnitTest_Sum
 {
     /*
-    @class UnitTest_Sum_Class
-    @brief Une Classe pour tester que ca fonctionne
-
-     */
+    *@class UnitTest_Sum_Class
+    *@brief Une Classe pour tester que ca fonctionne
+    *
+    */
     public int add (int x, int y){
         /*
          * @brief Methode pour simuler une addition
@@ -25,6 +25,7 @@ public class UnitTest_Sum
          * @return: La Methode Retourne la somme de x et y
          * 
          */
+
         return x + y;
     }
 
