@@ -17,7 +17,8 @@ public class UnitTest_Sum_Test
         int sum = A.add(5, 5);
 
         //Assert
-        Assert.AreEqual(10, sum, "Test Not working ");
+        Assert.AreEqual(15, sum, "Test Not working ");
+
         // Use the Assert class to test conditions
 
     }
