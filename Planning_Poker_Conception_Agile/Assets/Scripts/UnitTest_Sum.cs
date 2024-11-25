@@ -19,13 +19,13 @@ public class UnitTest_Sum
     public int add(int x, int y)
     {
         /*
-         * @brief Methode pour simuler une addition
+         * /brief Methode pour simuler une addition
          * 
          * @param x: Premiere Chiffre
          * @param y: Deuxieme Chiffre
          * 
-         * @return: La Methode Retourne la somme de x et y
-         * 
+         * /return: La Methode Retourne la somme de x et y
+         *
          */
         return x + y;
     }
