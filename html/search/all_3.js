@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pressback_4',['pressBack',['../classButtons__Controller.html#a3a180bbad722b30c46be9206c96e1a03',1,'Buttons_Controller']]],
-  ['pressstartgame_5',['pressStartGame',['../classButtons__Controller.html#afd0ddda7168305c7b26172d10a61c5d3',1,'Buttons_Controller']]]
+  ['instance_6',['instance',['../classBack__Ground__Singleton.html#ad9a9d28c906d9fdad271c4b4efabba3d',1,'Back_Ground_Singleton']]]
 ];
