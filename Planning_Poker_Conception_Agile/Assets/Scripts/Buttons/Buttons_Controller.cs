@@ -8,6 +8,11 @@ using UnityEngine;
 */
 public class Buttons_Controller : MonoBehaviour
 {
+    [Header("List of Interfaces")]
+    public GameObject[] UIs;
+
+
+
     [Header("Star Game Button")]
      /**@var UIMenu: Game object de l'interface du menu principale
      *@var UISelectGameMode: Game object de l'interface pour choisir mode de jeux
@@ -37,14 +42,31 @@ public class Buttons_Controller : MonoBehaviour
 
     public void pressBack()
     {
-        
+
         ///@brief Methode pour revenir a l'interface precedente.
-         
+        string sceneTag = "";
 
         currentUI.SetActive(false);
         toGoUI.SetActive(true);
 
         currentUI = toGoUI;
+
+        switch (sceneTag)
+        {
+            case "Menu":
+
+                break;
+
+            case "gMode":
+
+                break;
+
+            case "gConfig":
+
+                break;
+        }
+
+
 
     }
 

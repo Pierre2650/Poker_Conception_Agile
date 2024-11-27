@@ -2756,7 +2756,7 @@ GameObject:
   - component: {fileID: 782264050}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3929,7 +3929,7 @@ GameObject:
   - component: {fileID: 1369710396}
   m_Layer: 5
   m_Name: Game_Mode
-  m_TagString: Untagged
+  m_TagString: gMode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4900,7 +4900,7 @@ GameObject:
   - component: {fileID: 1989195942}
   m_Layer: 5
   m_Name: Game_Settings
-  m_TagString: Untagged
+  m_TagString: gConfig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
