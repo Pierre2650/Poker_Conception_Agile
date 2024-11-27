@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unittest_5fsum_0',['UnitTest_Sum',['../classUnitTest__Sum.html',1,'']]]
+  ['add_0',['add',['../classUnitTest__Sum.html#a300c03224c30f314e8f44f0590178817',1,'UnitTest_Sum']]]
 ];

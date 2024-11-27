@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unittest_5fsum_1',['UnitTest_Sum',['../classUnitTest__Sum.html',1,'']]]
+  ['buttons_5fcontroller_6',['Buttons_Controller',['../classButtons__Controller.html',1,'']]]
 ];
