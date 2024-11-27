@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['subtract_11',['subtract',['../classUnitTest__Sum.html#a5a2d165fa6f9a3cf1f63ab9b0f2af472',1,'UnitTest_Sum']]]
+  ['pressback_15',['pressBack',['../classButtons__Controller.html#a3a180bbad722b30c46be9206c96e1a03',1,'Buttons_Controller']]],
+  ['pressstartgame_16',['pressStartGame',['../classButtons__Controller.html#afd0ddda7168305c7b26172d10a61c5d3',1,'Buttons_Controller']]]
 ];
