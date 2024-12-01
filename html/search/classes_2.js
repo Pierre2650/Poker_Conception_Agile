@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setgamemodetitle_18',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]]
+  ['description_5fcontroller_21',['Description_Controller',['../classDescription__Controller.html',1,'']]]
 ];

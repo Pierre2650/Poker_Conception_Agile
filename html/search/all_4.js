@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pressback_7',['pressBack',['../classButtons__Controller.html#a3a180bbad722b30c46be9206c96e1a03',1,'Buttons_Controller']]],
-  ['pressnext_8',['pressNext',['../classButtons__Controller.html#a499904226c22aef1ffa1785a5a19579f',1,'Buttons_Controller']]],
-  ['pressstartgame_9',['pressStartGame',['../classButtons__Controller.html#afd0ddda7168305c7b26172d10a61c5d3',1,'Buttons_Controller']]]
+  ['increase_5fdecrease_5fbuttons_7',['Increase_Decrease_Buttons',['../classIncrease__Decrease__Buttons.html',1,'']]],
+  ['input_5fvalue_5fverification_8',['Input_Value_Verification',['../classInput__Value__Verification.html',1,'']]],
+  ['instance_9',['instance',['../classBack__Ground__Singleton.html#ad9a9d28c906d9fdad271c4b4efabba3d',1,'Back_Ground_Singleton']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unittest_5fsum_20',['UnitTest_Sum',['../classUnitTest__Sum.html',1,'']]]
+  ['setgamemodetitle_24',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]]
 ];
