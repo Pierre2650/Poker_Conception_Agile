@@ -7,6 +7,7 @@ using System;
 public class Input_Value_Verification : MonoBehaviour
 {
     private TMP_InputField myInputField;
+    public GameObject exception;
     
 
     // Start is called before the first frame update
@@ -29,11 +30,18 @@ public class Input_Value_Verification : MonoBehaviour
 
         if (int.TryParse(myInputField.text,out int a))
         {
-            Debug.Log(a);
+            if(a > 10)
+            {
+                myInputField.text = "10";
+                //raise exception
+            }
+
+            //is exception raiser , disable
         }
         else
         {
             myInputField.text = "";
+            //raise exception
         }
 
        
