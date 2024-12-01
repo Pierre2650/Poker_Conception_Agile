@@ -8,7 +8,6 @@ using NUnit.Framework;
 
 /**@file
 *@brief Class Description: Script Manipulation du champ de description 
-*@author Larmat jean
 */
 
 public class Description_Controller : MonoBehaviour

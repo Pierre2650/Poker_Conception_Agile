@@ -4,9 +4,9 @@ using UnityEngine;
 
 public static class GameSettings
 {
+    //Creer une structure pour minutes et secondes;
+    // est ces attrubut
     private static string gameMode { get; set; }
-
-
 
     public static string GameMode
     {
