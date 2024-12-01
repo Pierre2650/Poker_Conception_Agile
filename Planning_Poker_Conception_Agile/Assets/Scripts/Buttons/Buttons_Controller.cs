@@ -10,17 +10,9 @@ using UnityEngine;
 public class Buttons_Controller : MonoBehaviour
 {
     [Header("List of Interfaces")]
-    public GameObject[] UIs;
-
-
-
-    [Header("Star Game Button")]
-     /**@var UIMenu: Game object de l'interface du menu principale
-     *@var UISelectGameMode: Game object de l'interface pour choisir mode de jeux
+    /**@var UIs: Tableau des Interfaces Existantes
      */
-
-    public GameObject UIMenu;
-    public GameObject UISelectGameMode;
+    public GameObject[] UIs;
 
     [Header("Back Button")]
     /**@var currentUI: Game object de l'interface du menu principale
@@ -28,47 +20,74 @@ public class Buttons_Controller : MonoBehaviour
     */
 
     public GameObject currentUI;
-    public GameObject toGoUI;
+    public GameObject backUI;
+    public GameObject nextUI;
 
 
     public void pressStartGame()
     {
-         ///@brief Methode pour changer l'interface du Menu principale a le choix du mode de jeux.
+        ///@brief Methode pour changer l'interface du Menu principale a le choix du mode de jeux.
 
-        currentUI = UISelectGameMode;
+        UIs[0].SetActive(false);
+        UIs[1].SetActive(true);
 
-        UIMenu.SetActive(false);
-        UISelectGameMode.SetActive(true);
+        currentUI = UIs[1];
+
+        updateBackNextButtons();
     }
 
-    public void pressBack()
+    private void updateBackNextButtons()
     {
-
-        ///@brief Methode pour revenir a l'interface precedente.
-        string sceneTag = "";
-
-        currentUI.SetActive(false);
-        toGoUI.SetActive(true);
-
-        currentUI = toGoUI;
+        string sceneTag = currentUI.gameObject.tag;
 
         switch (sceneTag)
         {
             case "Menu":
 
+                nextUI = UIs[1];
+
+
                 break;
 
             case "gMode":
 
+                nextUI = UIs[2];
+                backUI = UIs[0];
+
                 break;
 
             case "gConfig":
+                // change scene
+
+                backUI = UIs[1];
 
                 break;
+
         }
+    }
 
+    public void pressBack()
+    {
+        ///@brief Methode pour revenir a l'interface precedente.
+        ///
+        currentUI.SetActive(false);
+        backUI.SetActive(true);
 
+        currentUI = backUI;
+        updateBackNextButtons();
 
+    }
+
+    public void pressNext() {
+
+        ///@brief Methode pour aller a l'interface suivante.
+        ///
+
+        currentUI.SetActive(false);
+        nextUI.SetActive(true);
+
+        currentUI = nextUI;
+        updateBackNextButtons();
     }
 
 
