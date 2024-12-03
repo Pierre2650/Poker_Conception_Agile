@@ -17,6 +17,31 @@ jobs:
   run-lint:
     runs-on: ubuntu-latest
     steps:
+
+    # Step 1: Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      # Step 2: Install .NET SDK
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.x'
+
+      # Step 3: Install dotnet-format
+      - name: Install dotnet-format
+        run: dotnet tool install -g dotnet-format
+
+      # Step 4: Auto-format the code
+      - name: Auto-format code
+        run: dotnet format --check --verbosity diagnostic
+        env:
+          DOTNET_ROOT: /usr/share/dotnet
+          
+    
       - name: Checkout code
         uses: actions/checkout@v4
         with:
