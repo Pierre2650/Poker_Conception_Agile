@@ -37,7 +37,7 @@ jobs:
 
       # Step 4: Auto-format the code
       - name: Auto-format code
-        run: dotnet format Planning_Poker_Conception_Agile.sln --verify-no-changes --verbosity diagnostic
+        run: dotnet format Planning_Poker_Conception_Agile/Planning_Poker_Conception_Agile.sln --verify-no-changes --verbosity diagnostic
         env:
           DOTNET_ROOT: /usr/share/dotnet
           
