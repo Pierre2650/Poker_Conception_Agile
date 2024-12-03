@@ -33,7 +33,7 @@ jobs:
 
       # Step 3: Install dotnet-format
       - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format --version latest --ignore-failed-sources
+        run: dotnet tool install -g dotnet-format --ignore-failed-sources
 
       # Step 4: Auto-fix formatting issues
       - name: Auto-fix formatting
