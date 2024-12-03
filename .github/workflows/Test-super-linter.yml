@@ -33,11 +33,11 @@ jobs:
 
       # Step 3: Install dotnet-format
       - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format --version latest
+        run: dotnet tool install -g dotnet-format
 
       # Step 4: Auto-format the code
       - name: Auto-format code
-        run: dotnet format Planning_Poker_Conception_Agile.sln --check --verbosity diagnostic
+        run: dotnet format Planning_Poker_Conception_Agile.sln --verify-no-change --verbosity diagnostic
         env:
           DOTNET_ROOT: /usr/share/dotnet
           
