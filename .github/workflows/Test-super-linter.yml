@@ -25,22 +25,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Step 2: Set up .NET SDK
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.x'
-
-      # Step 3: Install dotnet-format
-      - name: Install dotnet-format
-        run: dotnet tool install -g dotnet-format --ignore-failed-sources
-
-      # Step 4: Auto-fix formatting issues
-      - name: Auto-fix formatting
-        run: dotnet format --folder . --verbosity diagnostic
-        env:
-          DOTNET_ROOT: /usr/share/dotnet
-
       # Step 5: Run linter (optional step)
       - name: Lint Code Base
         uses: github/super-linter@v4
