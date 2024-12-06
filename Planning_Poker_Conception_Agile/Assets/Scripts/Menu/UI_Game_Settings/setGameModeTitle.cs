@@ -17,7 +17,7 @@ public class setGameModeTitle : MonoBehaviour
 
     private void OnEnable()
     {
-        titleText.text = GameSettings.GameMode + " Mode";
+        titleText.text = GameSettings.gameMode + " Mode";
         
     }
 }

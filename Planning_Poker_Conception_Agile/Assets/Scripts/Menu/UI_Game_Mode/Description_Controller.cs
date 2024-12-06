@@ -29,7 +29,7 @@ public class Description_Controller : MonoBehaviour
         {
             case 0:
                  
-                GameSettings.GameMode = "Strict";
+                GameSettings.gameMode = "Strict";
 
                 descriptionText.text = "Regles :\r\n" +
                     "-Le mode de jeu 'Strict' est le mode de base pour l'estimation de la difficulté des tâches. Les parties se déroulent avec un nombre de manches illimité, et les joueurs votent jusqu'à ce que l'unanimité soit atteinte.\r\n \r\n" +
@@ -38,7 +38,7 @@ public class Description_Controller : MonoBehaviour
                 break;
             case 1:
 
-                GameSettings.GameMode = "Average";
+                GameSettings.gameMode = "Average";
 
                 descriptionText.text = "Regles :\r\n" +
                     "-Le mode 'Moyenne' propose une approche en deux manches pour estimer la difficulté des tâches.\r\n \r\n" +
