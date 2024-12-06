@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['increase_5fdecrease_5fbuttons_22',['Increase_Decrease_Buttons',['../classIncrease__Decrease__Buttons.html',1,'']]],
-  ['input_5fvalue_5fverification_23',['Input_Value_Verification',['../classInput__Value__Verification.html',1,'']]]
+  ['debate_5ftimer_5fcontroller_35',['Debate_Timer_Controller',['../classDebate__Timer__Controller.html',1,'']]],
+  ['description_5fcontroller_36',['Description_Controller',['../classDescription__Controller.html',1,'']]],
+  ['deserializer_37',['Deserializer',['../classFileExplorerController_1_1Deserializer.html',1,'FileExplorerController']]]
 ];

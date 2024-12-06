@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setgamemodetitle_24',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]]
+  ['fileexplorercontroller_38',['FileExplorerController',['../classFileExplorerController.html',1,'']]]
 ];

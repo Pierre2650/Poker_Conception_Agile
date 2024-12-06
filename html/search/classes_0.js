@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['back_5fground_5fsingleton_18',['Back_Ground_Singleton',['../classBack__Ground__Singleton.html',1,'']]],
-  ['buttons_5fcontroller_19',['Buttons_Controller',['../classButtons__Controller.html',1,'']]]
+  ['add_5fcustom_5ftask_27',['Add_Custom_Task',['../classAdd__Custom__Task.html',1,'']]]
 ];
