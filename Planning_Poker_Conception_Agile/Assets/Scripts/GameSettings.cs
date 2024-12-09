@@ -9,6 +9,8 @@ public static class GameSettings
 
     public static int numberOfPlayers { get; set; } = 0;
 
+    public static List<string> playerNames {  get; set; } = new List<string>();
+
     public static int[] choiceTimer { get; set; } = new int[2];
     public static int[] debateTimer { get; set; } = new int[2];
 
