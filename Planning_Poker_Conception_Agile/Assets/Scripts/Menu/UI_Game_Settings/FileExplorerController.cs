@@ -83,7 +83,7 @@ public class FileExplorerController : MonoBehaviour
             {
                 showException(1);
             }
-            else if (GameSettings.numberOfTasks + temp.Backlog.Count > 15)
+            else if (GameSettings.numberOfTasksToEvalute + temp.Backlog.Count > 15)
             {
                 showException(3);
             }
@@ -94,7 +94,7 @@ public class FileExplorerController : MonoBehaviour
                     GameSettings.backlogList.Add(x);
                 }
 
-                GameSettings.numberOfTasks = GameSettings.backlogList.Count;
+                GameSettings.numberOfTasksToEvalute = GameSettings.backlogList.Count;
 
                 showException(0);
 

@@ -15,9 +15,11 @@ public static class GameSettings
     public static int[] debateTimer { get; set; } = new int[2];
 
     public static List<Backlog_Information> backlogList { get; set; } = new List<Backlog_Information>();
-    public static int numberOfTasks = 0;
+    public static List<Evaluated_Backlog> reviewedList { get; set; } = new List<Evaluated_Backlog>();
+    public static int numberOfTasksToEvalute { get; set; } = 0;
+    public static int numberOfTaskEvaluted { get; set; } = 0;
 
 
-    
+
 
 }

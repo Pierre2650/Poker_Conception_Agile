@@ -35,7 +35,8 @@ public class Char_Creation_Manager : MonoBehaviour
     void Update()
     {
         if (currentPlayer <= GameSettings.numberOfPlayers) { 
-            textPlayerNumber.text = "Player " + currentPlayer.ToString();
+            int temp = currentPlayer + 1;
+            textPlayerNumber.text = "Player " + temp.ToString();
         }
     }
 
