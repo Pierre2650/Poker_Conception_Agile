@@ -47,6 +47,7 @@ public class Add_Custom_Task : MonoBehaviour
                 x.Role = inputFields[0].text;
                 x.Task = inputFields[1].text;
                 x.Obj = inputFields[2].text;
+                x.Value = "None";
 
                 GameSettings.backlogList.Add(x);
                 GameSettings.numberOfTasksToEvalute++;

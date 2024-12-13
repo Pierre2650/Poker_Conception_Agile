@@ -18,6 +18,11 @@ public class Vote_Controller : MonoBehaviour
     private float minutes = 2;//GameSettings.choiceTimer[0];
     private float seconds = -1;
 
+    private int currentPlayer = 0;
+
+    public GameObject currentUI;
+    public GameObject nextUI;
+
 
     private Dictionary<string, string> results = new Dictionary<string, string>();
 
@@ -36,11 +41,14 @@ public class Vote_Controller : MonoBehaviour
     void Update()
     {
 
+        if (currentPlayer == GameSettings.numberOfPlayers) {
+            //startDebate();
+        }
+
         if (minutes >= 0)
         {
             countDown();
         }
-
 
 
     }
@@ -81,12 +89,14 @@ public class Vote_Controller : MonoBehaviour
 
         // Careful with 's Turn
         results.Add(textCurrentPlayer.text, value);
-        resetParam();
+
+        nextPlayer();
 
     }
 
-    private void resetParam()
+    private void nextPlayer()
     {
+        currentPlayer++;
         //next player
         //textCurrentPlayer.text = GameSettings.playerNames[next];
         minutes = 2;
@@ -95,5 +105,15 @@ public class Vote_Controller : MonoBehaviour
 
 
     }
+
+
+    private void startDebate()
+    {
+        //dependence of game mode
+        currentUI.SetActive(false);
+        nextUI.SetActive(true);
+
+    }
+
 
 }
