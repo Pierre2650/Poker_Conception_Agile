@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Game_settings_NextButton_Controller : MonoBehaviour
+public class Game_settings_Start_Button_Controller : MonoBehaviour
 {
     public GameObject next;
     private Button buttonNext;
@@ -17,7 +17,7 @@ public class Game_settings_NextButton_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( GameSettings.numberOfPlayers > 0 && GameSettings.numberOfTasks > 0)
+        if ( GameSettings.numberOfPlayers > 1 && GameSettings.numberOfTasksToEvalute > 0)
         {
             buttonNext.interactable = true;
         }

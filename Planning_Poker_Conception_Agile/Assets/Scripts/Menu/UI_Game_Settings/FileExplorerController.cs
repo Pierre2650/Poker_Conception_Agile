@@ -12,7 +12,7 @@ using UnityEngine;
 
 public class FileExplorerController : MonoBehaviour
 {
-    public GameObject excpetion;
+    public GameObject exceptions;
     private TMP_Text textException;
    
     
@@ -26,7 +26,7 @@ public class FileExplorerController : MonoBehaviour
 
     private void Start()
     {
-        textException = excpetion.GetComponent<TMP_Text>();
+        textException = exceptions.GetComponent<TMP_Text>();
 
 
         // Set filters (optional)
@@ -77,13 +77,12 @@ public class FileExplorerController : MonoBehaviour
           
             //Deserialize
             Deserializer temp = JsonUtility.FromJson<Deserializer>(info);
-            Debug.Log(temp.Backlog.Count);
 
             if (temp.Backlog.Count > 15)
             {
                 showException(1);
             }
-            else if (GameSettings.numberOfTasks + temp.Backlog.Count > 15)
+            else if (GameSettings.numberOfTasksToEvalute + temp.Backlog.Count > 15)
             {
                 showException(3);
             }
@@ -94,9 +93,23 @@ public class FileExplorerController : MonoBehaviour
                     GameSettings.backlogList.Add(x);
                 }
 
-                GameSettings.numberOfTasks = GameSettings.backlogList.Count;
+                
+                GameSettings.countEvaluatedtasks();
+                GameSettings.numberOfTasksToEvalute = GameSettings.backlogList.Count - GameSettings.numberOfTaskEvaluted;
 
-                showException(0);
+                if(GameSettings.numberOfTasksToEvalute == 0)
+                {
+                    GameSettings.backlogList.Clear();
+                    showException(4);
+
+                }
+                else
+                {
+                    showException(0);
+
+                }
+
+                
 
 
             }
@@ -114,7 +127,7 @@ public class FileExplorerController : MonoBehaviour
         switch (x) { 
             case 0:
 
-                excpetion.SetActive(false);
+                exceptions.SetActive(false);
 
                 break;
 
@@ -122,23 +135,31 @@ public class FileExplorerController : MonoBehaviour
      
                 textException.text = "*NB of Tasks > 15 \r\n" +
                                     "Max Number of task reached";
-                excpetion.SetActive(true);
+                exceptions.SetActive(true);
 
                 break;
 
             case 2:
                 textException.text = "*Selected File is not a JSON";
 
-                excpetion.SetActive(true);
+                exceptions.SetActive(true);
                 break;
 
             case 3:
                 textException.text = "*Adding the JSON would surpass Max Number of tasks";
 
-                excpetion.SetActive(true);
+                exceptions.SetActive(true);
 
                 break;
-        
+
+            case 4:
+
+                textException.text = "*All tasks in the JSON Already Evaluated";
+
+                exceptions.SetActive(true);
+                break;
+
+
         }
 
     }

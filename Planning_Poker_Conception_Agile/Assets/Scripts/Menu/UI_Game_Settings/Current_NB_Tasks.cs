@@ -16,7 +16,7 @@ public class Current_NB_Tasks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        n.text = GameSettings.numberOfTasks.ToString();
+        n.text = GameSettings.numberOfTasksToEvalute.ToString();
         
     }
 }

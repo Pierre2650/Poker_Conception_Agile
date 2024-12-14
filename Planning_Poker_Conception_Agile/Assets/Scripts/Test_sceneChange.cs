@@ -18,7 +18,7 @@ public class Test_sceneChange : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O))
         {
-            Debug.Log("DEBATE -> Minutes: "+GameSettings.debateTimer[0]+ "  Seconds: " + GameSettings.debateTimer[1]);
+            //Debug.Log("DEBATE -> Minutes: "+GameSettings.debateTimer[0]+ "  Seconds: " + GameSettings.debateTimer[1]);
 
 
         }

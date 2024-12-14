@@ -42,14 +42,15 @@ public class Add_Custom_Task : MonoBehaviour
 
             Backlog_Information x = new Backlog_Information();
 
-            if (GameSettings.numberOfTasks < 15)
+            if (GameSettings.numberOfTasksToEvalute < 15)
             {
                 x.Role = inputFields[0].text;
                 x.Task = inputFields[1].text;
                 x.Obj = inputFields[2].text;
+                x.Value = "None";
 
                 GameSettings.backlogList.Add(x);
-                GameSettings.numberOfTasks++;
+                GameSettings.numberOfTasksToEvalute++;
 
 
                 inputFields[0].text = "";

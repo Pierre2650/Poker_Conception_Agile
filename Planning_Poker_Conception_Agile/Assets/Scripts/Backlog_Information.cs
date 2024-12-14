@@ -10,5 +10,6 @@ public class Backlog_Information
     public string Role;
     public string Task;
     public string Obj;
-    
+    public string Value;
+
 }
