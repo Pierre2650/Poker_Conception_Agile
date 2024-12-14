@@ -7,6 +7,7 @@ public class Card_Controller : MonoBehaviour
     public string value;
 
     private bool onObject = false;
+    static bool bugPrevention = false;
 
     public Vote_Controller vote_scrpt;
 
@@ -20,8 +21,13 @@ public class Card_Controller : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && onObject) {
+        if (Input.GetMouseButtonDown(0) && onObject && !bugPrevention) {
+            Debug.Log("Card Was clicked");
+            //bugPrevention = true;
+
             vote_scrpt.choiceMade(value);
+
+            //bugPrevention = false;
         }
         
     }
@@ -32,6 +38,11 @@ public class Card_Controller : MonoBehaviour
     }
 
     void OnMouseExit()
+    {
+        onObject = false;
+    }
+
+    private void OnDisable()
     {
         onObject = false;
     }

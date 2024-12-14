@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class GameSettings
 {
-    public static string gameMode { get; set; }
+    public static string gameMode { get; set; } = "Strict";
 
     public static int numberOfPlayers { get; set; } = 0;
 
@@ -15,8 +15,23 @@ public static class GameSettings
     public static int[] debateTimer { get; set; } = new int[2];
 
     public static List<Backlog_Information> backlogList { get; set; } = new List<Backlog_Information>();
+
+    public static Backlog_Information taskBeingEvaluated { get; set; } = new Backlog_Information();
     public static int numberOfTasksToEvalute { get; set; } = 0;
     public static int numberOfTaskEvaluted { get; set; } = 0;
+
+
+    public static void countEvaluatedtasks()
+    {
+        foreach (Backlog_Information task in backlogList)
+        {
+            if (task.Value != "None")
+            {
+                numberOfTaskEvaluted++;
+            }
+
+        }
+    }
 
 
 
