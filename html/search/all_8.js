@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['setgamemodetitle_22',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]],
-  ['subtract_23',['subtract',['../classUnitTest__Sum.html#a5a2d165fa6f9a3cf1f63ab9b0f2af472',1,'UnitTest_Sum']]]
+  ['ongame_5fcurrent_5ftask_5ftexts_5fcontroller_0',['OnGame_Current_Task_Texts_Controller',['../classOnGame__Current__Task__Texts__Controller.html',1,'']]]
 ];
