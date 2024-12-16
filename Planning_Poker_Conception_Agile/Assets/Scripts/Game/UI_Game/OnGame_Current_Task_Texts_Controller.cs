@@ -26,9 +26,9 @@ public class OnGame_Current_Task_Texts_Controller : MonoBehaviour
 
     private void OnEnable()
     {
-        contenu[0].text = GameSettings.backlogList[0].Role;
-        contenu[1].text = GameSettings.backlogList[0].Task;
-        contenu[2].text = GameSettings.backlogList[0].Obj;
+        contenu[0].text = GameSettings.taskBeingEvaluated.Role;
+        contenu[1].text = GameSettings.taskBeingEvaluated.Task;
+        contenu[2].text = GameSettings.taskBeingEvaluated.Obj;
 
     }
 }

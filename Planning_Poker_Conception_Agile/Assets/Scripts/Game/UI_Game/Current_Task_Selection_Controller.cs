@@ -12,7 +12,6 @@ public class Current_Task_Selection_Controller : MonoBehaviour
     public GameObject nbCompletedtasks;
     private TMP_Text textNbCompleted;
 
-    private int lastRoll = 0;
     // Start is called before the first frame update
     void Awake()
     {
@@ -47,34 +46,65 @@ public class Current_Task_Selection_Controller : MonoBehaviour
 
     private void OnEnable()
     {
-        random();
+        reRoll();
+        
 
     }
 
 
 
 
-    public void random()
+    public void reRoll()
     {
 
         Debug.Log("ReRoll Was Pushed");
 
-        int i = Random.Range(0, GameSettings.numberOfTasksToEvalute);
-        int temp = 0;
-
-        while ((i == lastRoll  || GameSettings.backlogList[i].Role != "None") && temp > 299)
+        if (GameSettings.numberOfTasksToEvalute > 1)
         {
-            i = Random.Range(0, GameSettings.numberOfTasksToEvalute);
+            int i = Random.Range(0, GameSettings.numberOfTasksToEvalute + GameSettings.numberOfTaskEvaluted);
+            int temp = 0;
 
-            temp++;
+            while (temp < 9999)
+            {
+                i = Random.Range(0, GameSettings.numberOfTasksToEvalute + GameSettings.numberOfTaskEvaluted);
+
+                if (GameSettings.backlogList[i].Value == "None")
+                {
+                    break;
+
+                }
+
+                temp++;
+
+            }
+
+            contenu[0].text = GameSettings.backlogList[i].Role;
+            contenu[1].text = GameSettings.backlogList[i].Task;
+            contenu[2].text = GameSettings.backlogList[i].Obj;
+
+        }
+        else
+        {
+            foreach (Backlog_Information temp in GameSettings.backlogList)
+            {
+
+                if (temp.Value == "None")
+                {
+                    contenu[0].text = temp.Role;
+                    contenu[1].text = temp.Task;
+                    contenu[2].text = temp.Obj;
+
+                    break;
+
+                }
+
+
+            }
 
         }
 
-        contenu[0].text = GameSettings.backlogList[i].Role;
-        contenu[1].text = GameSettings.backlogList[i].Task;
-        contenu[2].text = GameSettings.backlogList[i].Obj;
+       
 
-        lastRoll = i;
 
     }
 

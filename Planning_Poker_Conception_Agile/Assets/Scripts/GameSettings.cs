@@ -21,13 +21,19 @@ public static class GameSettings
     public static int numberOfTaskEvaluted { get; set; } = 0;
 
 
-    public static void countEvaluatedtasks()
+    public static void countTasks()
     {
+        numberOfTaskEvaluted = 0;
+        numberOfTasksToEvalute = 0;
         foreach (Backlog_Information task in backlogList)
         {
             if (task.Value != "None")
             {
                 numberOfTaskEvaluted++;
+            }
+            else
+            {
+                numberOfTasksToEvalute++;
             }
 
         }

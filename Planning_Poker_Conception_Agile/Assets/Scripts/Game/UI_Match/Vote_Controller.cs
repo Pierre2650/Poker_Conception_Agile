@@ -8,9 +8,13 @@ using static PlasticGui.GetProcessName;
 
 public class Vote_Controller : MonoBehaviour
 {
+    
+
+    [Header("Current PLayer")]
     public GameObject objCurrentPlayer;
     private TMP_Text textCurrentPlayer;
 
+    [Header("Time")]
     public GameObject objMinutes;
     private TMP_Text textMinutes;
 
@@ -20,25 +24,27 @@ public class Vote_Controller : MonoBehaviour
     private float minutes = GameSettings.choiceTimer[0];
     private float seconds = GameSettings.choiceTimer[1];
 
+
     private int currentPlayerIndex = 0;
 
+    [Header("Button Next")]
     public GameObject[] current = new GameObject[2];
     public GameObject next;
 
+    [Header("Number of Rounds")]
     public GameObject objNbRound;
     private TMP_Text textNbRound;
-    private int round = 0;
+    public int round = 0;
 
+    [Header("NotePad")]
     public GameObject objNotepad;
     public TMP_Text textNotepad;
 
+
+    [Header("Foreing Scripts")]
     public Results_Controller results_Scrpt;
 
     public Dictionary<string, string> results = new Dictionary<string, string>();
-
-    public List<string> temp = new List<string>();
-    public List<string> temp2 = new List<string>();
-
 
     private void Awake()
     {
@@ -57,25 +63,20 @@ public class Vote_Controller : MonoBehaviour
     private void Start()
     {
         round++;
-        textNbRound.text = "Round " + round.ToString();
+        setRound(round);
 
         textCurrentPlayer.text = GameSettings.playerNames[0] + "'s Turn";
 
         resetTimer();
     }
 
-    /*
+
+
+    
     private void OnEnable()
     {
-        round++;
-        textNbRound.text = "Round " + round.ToString();
-
-        results.Clear();
-
-        textCurrentPlayer.text = GameSettings.playerNames[0] + "'s Turn";
-
-        resetTimer();
-    }*/
+        
+    }
 
 
     // Update is called once per frame
@@ -96,26 +97,16 @@ public class Vote_Controller : MonoBehaviour
         }
         else
         {
-            nextPlayer();
+            choiceMade("?");
         }
-
-
         
 
     }
 
-    private void updateDiction()
+
+    public void setRound(int round)
     {
-        temp.Clear();
-        temp2.Clear();
-
-        foreach (var kvp in results)
-        {
-            temp.Add(kvp.Key);
-            temp2.Add(kvp.Value);
-
-        }
-
+        textNbRound.text = "Round " + round.ToString();
     }
 
     private void countDown()
@@ -165,7 +156,7 @@ public class Vote_Controller : MonoBehaviour
             nextPlayer();
         }
        
-        updateDiction();
+      
         resetTimer();
 
       
@@ -198,8 +189,7 @@ public class Vote_Controller : MonoBehaviour
        textNbRound.text = "Round "+ round.ToString();
 
        results.Clear();
-       temp.Clear();
-       temp2.Clear();
+
 
        textCurrentPlayer.text = GameSettings.playerNames[0] + "'s Turn";
 
@@ -210,14 +200,15 @@ public class Vote_Controller : MonoBehaviour
     private void reviewResults()
     {
 
+        next.SetActive(true);
+
+
         //dependence of game mode
         for (int i = 0; i < 2; i++) {
 
             current[i].SetActive(false);
             
         }
-
-        next.SetActive(true);
 
        
     }

@@ -3,15 +3,31 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class List_PLY_Results_Controller : list_PLY_Names_Controller
+public class List_PLY_Results_Controller: MonoBehaviour
 {
+    public GameObject parentObject;
+
+    public GameObject prefab;
+
+    public string testTxt;
+
+    public GameObject toGetPosition;
+    protected RectTransform rtToGetPosition;
+
+    public float distanceFromEachother;
+
+
+
     public Vote_Controller Vote_Scrpt;
     public Results_Controller Results_Scpt;
-    private List<GameObject> listOfResults = new List<GameObject>();
+
+
+    public List<GameObject> listOfResults = new List<GameObject>();
+
+    
     private void Awake()
     {
-       
-
+   
 
     }
 
@@ -19,6 +35,7 @@ public class List_PLY_Results_Controller : list_PLY_Names_Controller
     private void OnEnable()
     {
         
+
         generateNametags();
         
         Results_Scpt.players_results = new List<GameObject>(listOfResults);
@@ -30,10 +47,13 @@ public class List_PLY_Results_Controller : list_PLY_Names_Controller
     }
 
 
-    protected override void generateNametags()
+    private  void generateNametags()
     {
-        //First PLayer refence separarted
+        Debug.Log("Generate names Is called in Results");
 
+
+        //First PLayer refence separarted
+        
         rtToGetPosition = toGetPosition.GetComponent<RectTransform>();
 
         GameObject parentObjText_ToGetPosition = toGetPosition.transform.GetChild(3).gameObject;
@@ -53,7 +73,7 @@ public class List_PLY_Results_Controller : list_PLY_Names_Controller
 
         if (GameSettings.numberOfPlayers <= 5)
         {
-            for (int i = 1; i < GameSettings.numberOfPlayers; i++)
+            for (int i = 1; i < GameSettings.numberOfPlayers ; i++)
             {
 
                 generateAName(i);
@@ -108,6 +128,7 @@ public class List_PLY_Results_Controller : list_PLY_Names_Controller
         //6. continue to next child
 
         GameObject temp = Instantiate(prefab);
+
         listOfResults.Add(temp);
 
         //1.set parent
