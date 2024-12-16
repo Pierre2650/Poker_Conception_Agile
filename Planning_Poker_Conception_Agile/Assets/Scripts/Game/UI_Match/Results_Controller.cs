@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Results_Controller : MonoBehaviour
 {
     public Vote_Controller Vote_Scrpt;
+    public Game_Controller Game_Scrpt;
     
     public List<GameObject> players_results;
 
@@ -15,7 +16,12 @@ public class Results_Controller : MonoBehaviour
     public List<string> maxDebateSide = new List<string>();
     public List<string> minDebateSide = new List<string>();
 
+    public bool unanimity = true;
+    public string undisputedValue = "?";
+
     int min, max;
+
+    
 
     private void OnEnable()
     {
@@ -24,9 +30,33 @@ public class Results_Controller : MonoBehaviour
 
     public void doActions()
     {
+        resetMarksFirstName();
+
         valuesToINT();
-        findExtremes();
-        chooseExtremes();
+        unanimity = checkUnanimity();
+
+        if (!unanimity)
+        {
+            findExtremes();
+            chooseExtremes();
+        }
+       
+
+    }
+
+    private void resetMarksFirstName()
+    {
+        GameObject fatherName = players_results[0].transform.GetChild(3).gameObject;
+        GameObject childName = fatherName.transform.GetChild(1).gameObject;
+
+        TMP_Text childNameText = childName.GetComponent<TMP_Text>();
+
+        GameObject maxMark = players_results[0].transform.GetChild(0).gameObject;
+        GameObject minMark = players_results[0].transform.GetChild(1).gameObject;
+
+
+        maxMark.SetActive(false);
+        minMark.SetActive(false);
 
     }
 
@@ -34,6 +64,7 @@ public class Results_Controller : MonoBehaviour
     private void valuesToINT()
     {
         int i = 0;
+
         foreach (var ex in Vote_Scrpt.results)
         {
 
@@ -61,6 +92,36 @@ public class Results_Controller : MonoBehaviour
             i++;
         }
 
+    }
+
+    private bool checkUnanimity()
+    {
+        int precedent = evaluations[0];
+        int i;
+
+        for ( i = 1; i < evaluations.Length; i++)
+        {
+            if (precedent != evaluations[i])
+            {
+                return false;
+            }
+
+            precedent = evaluations[i];
+        }
+
+        i--;
+
+        if(evaluations[i] == -1)
+        {
+            undisputedValue = "?";
+
+        }
+        else
+        {
+            undisputedValue = evaluations[i].ToString();
+        }
+        
+        return true;
     }
     private void findExtremes()
     {
@@ -113,6 +174,7 @@ public class Results_Controller : MonoBehaviour
 
                 maxDebateSide.Add(childNameText.text);
             }
+            
 
 
             if (Vote_Scrpt.results[childNameText.text] == min.ToString())
@@ -122,12 +184,26 @@ public class Results_Controller : MonoBehaviour
 
                 minDebateSide.Add(childNameText.text);
             }
+          
 
 
 
         }
 
     }
+
+    public void restart()
+    {
+        maxDebateSide.Clear();
+        minDebateSide.Clear();
+
+        for (int i = 1; i < players_results.Count; i++)
+        {
+            Destroy(players_results[i]);
+        }
+    }
+
+   
 
   
 }

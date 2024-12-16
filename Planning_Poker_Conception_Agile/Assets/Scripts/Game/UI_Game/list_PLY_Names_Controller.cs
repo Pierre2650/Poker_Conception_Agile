@@ -28,13 +28,15 @@ public class list_PLY_Names_Controller : MonoBehaviour
 
     }
 
-    private void OnEnable()
+    private void Start()
     {
         generateNametags();
+
     }
+   
 
 
-    protected virtual void generateNametags()
+    private void generateNametags()
     {
 
         //1.set parent
@@ -45,7 +47,7 @@ public class list_PLY_Names_Controller : MonoBehaviour
         //6. continue to next child
 
 
-        for (int i = 1; i < GameSettings.numberOfPlayers; i++)
+        for (int i = 1; i < GameSettings.numberOfPlayers ; i++)
         {
 
             GameObject temp = Instantiate(prefab);
@@ -68,7 +70,6 @@ public class list_PLY_Names_Controller : MonoBehaviour
 
             //5. 
             childText.text = GameSettings.playerNames[i];
-
 
         }
          

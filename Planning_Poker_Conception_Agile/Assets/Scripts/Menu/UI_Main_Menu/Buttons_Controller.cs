@@ -36,6 +36,17 @@ public class Buttons_Controller : MonoBehaviour
         updateBackNextButtons();
     }
 
+    public void pressCredits()
+    {
+
+    }
+
+
+    public void pressExitGame()
+    {
+        Application.Quit();
+    }
+
     private void updateBackNextButtons()
     {
         string sceneTag = currentUI.gameObject.tag;

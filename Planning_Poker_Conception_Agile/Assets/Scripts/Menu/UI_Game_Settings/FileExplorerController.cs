@@ -94,7 +94,7 @@ public class FileExplorerController : MonoBehaviour
                 }
 
                 
-                GameSettings.countEvaluatedtasks();
+                GameSettings.countTasks();
                 GameSettings.numberOfTasksToEvalute = GameSettings.backlogList.Count - GameSettings.numberOfTaskEvaluted;
 
                 if(GameSettings.numberOfTasksToEvalute == 0)

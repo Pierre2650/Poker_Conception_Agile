@@ -12,8 +12,10 @@ public class Debate_Controller : MonoBehaviour
     public GameObject objMinPLNames;
     private TMP_Text textMinPlNames;
 
+    [Header("Foreing Scripts")]
     public Results_Controller  results_Scrpt;
     public Vote_Controller vote_scrpt;
+    public Game_Controller game_scrpt;
 
     public Sprite[] cardSprites;
     public GameObject maxCard;
@@ -23,6 +25,8 @@ public class Debate_Controller : MonoBehaviour
 
     public GameObject objMinutes;
     private TMP_Text textMinutes;
+
+    public GameObject objColon;
 
     public GameObject objSeconds;
     private TMP_Text textSeconds;
@@ -43,17 +47,17 @@ public class Debate_Controller : MonoBehaviour
     public GameObject[] next = new GameObject[2];
 
     // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         textMaxPlNames = objMaxPLNames.GetComponent<TMP_Text>();
         textMinPlNames = objMinPLNames.GetComponent<TMP_Text>();
 
-        setNames();
-        setCards();
-
-
         textMinutes = objMinutes.GetComponent<TMP_Text>();
         textSeconds = objSeconds.GetComponent<TMP_Text>();
+
+        textNotes = objNotes.GetComponent<TMP_Text>();
+
 
         textMinutes.text = minutes.ToString();
 
@@ -62,12 +66,19 @@ public class Debate_Controller : MonoBehaviour
             seconds = -1;
         }
 
-        if(minutes == 99)
+        if (minutes == 99)
         {
             noTime();
         }
 
-        textNotes = objNotes.GetComponent<TMP_Text>();
+    }
+
+    private void OnEnable()
+    {
+
+        setNames();
+        setCards();
+
 
     }
 
@@ -173,6 +184,9 @@ public class Debate_Controller : MonoBehaviour
     private void noTime()
     {
         thereIsTime = false;
+        objMinutes.SetActive(false);
+        objColon.SetActive(false);
+        objSeconds.SetActive(false);
 
     }
     private void countDown()
@@ -214,14 +228,13 @@ public class Debate_Controller : MonoBehaviour
 
     public void endDebate()
     {
+
         //check game Mode
         vote_scrpt.textNotepad.text = notes;
         vote_scrpt.reStartVote();
-        
-        for (int i = 1; i < results_Scrpt.players_results.Count; i++)
-        {
-            Destroy(results_Scrpt.players_results[i]);
-        }
+
+        results_Scrpt.restart();
+
         
 
         for (int i = 0; i < 2; i++) {
