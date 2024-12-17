@@ -74,6 +74,8 @@ public class FileExplorerController : MonoBehaviour
             string info;
             info = File.ReadAllText(jsonPath);
 
+
+
           
             //Deserialize
             Deserializer temp = JsonUtility.FromJson<Deserializer>(info);

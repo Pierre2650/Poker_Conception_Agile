@@ -14,16 +14,22 @@ public class Game_Controller : MonoBehaviour
         if(GameSettings.numberOfTasksToEvalute == 0)
         {
 
-            next.SetActive(true);
-
-            for (int i = 0; i < current.Length; i++)
-            {
-             
-                current[i].SetActive(false);
-            }
+            endGame();
 
             
         }
+    }
+
+    private void endGame()
+    {
+        next.SetActive(true);
+
+        for (int i = 0; i < current.Length; i++)
+        {
+
+            current[i].SetActive(false);
+        }
+
     }
 
     private int findTargetTask(Backlog_Information target)

@@ -115,6 +115,9 @@ public class Results_Controller : MonoBehaviour
         {
             undisputedValue = "?";
 
+        }else if (evaluations[i] == -2)
+        {
+            undisputedValue= "Coffee";
         }
         else
         {
