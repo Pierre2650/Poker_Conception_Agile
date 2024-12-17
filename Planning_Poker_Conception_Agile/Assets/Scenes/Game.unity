@@ -12195,6 +12195,7 @@ MonoBehaviour:
   Vote_Scrpt: {fileID: 93236538}
   Game_Scrpt: {fileID: 1322677132}
   players_results: []
+  evaluations: 
   maxDebateSide: []
   minDebateSide: []
   unanimity: 0
@@ -20242,7 +20243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 83.47, y: -0.44001}
+  m_AnchoredPosition: {x: 83.47, y: -0.44001007}
   m_SizeDelta: {x: -64.76, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1920253861

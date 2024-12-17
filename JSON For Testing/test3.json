@@ -1,0 +1,51 @@
+{
+    "Backlog":[
+        {
+            "Role": "AAAA",
+            "Task": "AAAA",
+            "Obj": "AAA",
+            "Value": "10"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Avoir une interface pour pouvoir créer un nouveau profil",
+            "Obj": "Mettre à jour le trombinoscope",
+            "Value": "None"
+        },
+
+        {
+            "Role": "User",
+            "Task": "Pouvoir consulter le profil détaillé d'une identité sélectionnée",
+            "Obj": "Pouvoir contacter ou reconnaitre une personne",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Pouvoir insérer une photo de la personne dans son profil",
+            "Obj": "Le rendre reconnaissable de tous",
+            "Value": "None"
+        },
+
+
+        
+        {
+            "Role": "Admin",
+            "Task": "Courrir COURRIR COURRIR COURRIR",
+            "Obj": "Cardio",
+            "Value": "None"
+        },
+
+        
+
+        {
+            "Role": "Admin",
+            "Task": "AAAA",
+            "Obj": "Cardio",
+            "Value": "?"
+        }
+
+
+    ] 
+}

@@ -24,9 +24,37 @@ public class Results_Review_Next_Controller : MonoBehaviour
 
     public void nextbutton()
     {
+        if(GameSettings.gameMode == "Average")
+        {
+            if(controller.Vote_Scrpt.round == 2)
+            {
+
+                endMatch();
+
+
+            }
+            else
+            {
+                checkUnanimity();
+
+            }
+        }
+        else
+        {
+
+            checkUnanimity();
+
+
+        }
+
+    }
+
+
+    private void checkUnanimity()
+    {
         if (controller.unanimity)
         {
-            Debug.Log("Unanimity value = "+controller.undisputedValue);
+
             if (controller.undisputedValue == "Coffee")
             {
                 coffeeBreak();
@@ -35,13 +63,13 @@ public class Results_Review_Next_Controller : MonoBehaviour
             {
                 endMatch();
             }
-            
+
 
         }
-        else{
+        else
+        {
             startDebate();
         }
-
 
     }
 
@@ -62,13 +90,21 @@ public class Results_Review_Next_Controller : MonoBehaviour
     {
         controller.restart();
         controller.Vote_Scrpt.reStartVote();
-        controller.Vote_Scrpt.round = 0;
+        controller.Vote_Scrpt.round = 1;
         controller.Vote_Scrpt.textNotepad.text = "";
-        controller.Vote_Scrpt.setRound(0);
+        controller.Vote_Scrpt.setRound(1);
 
+        if (GameSettings.gameMode == "Average") {
 
-        controller.Game_Scrpt.updateTaskState(GameSettings.taskBeingEvaluated, controller.undisputedValue);
+            //Find average fonction, set as undisputed value
+            int avg = controller.findAverage(controller.evaluations);
+            controller.Game_Scrpt.updateTaskState(GameSettings.taskBeingEvaluated, avg.ToString());
+        }
+        else
+        {
+            controller.Game_Scrpt.updateTaskState(GameSettings.taskBeingEvaluated, controller.undisputedValue);
 
+        }
         
 
         for (int i = 0; i < vote.Length; i++)
