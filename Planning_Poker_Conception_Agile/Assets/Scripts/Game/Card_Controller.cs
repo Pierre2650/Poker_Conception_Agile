@@ -22,12 +22,9 @@ public class Card_Controller : MonoBehaviour
     {
 
         if (Input.GetMouseButtonDown(0) && onObject && !bugPrevention) {
-            Debug.Log("Card Was clicked");
-            //bugPrevention = true;
 
             vote_scrpt.choiceMade(value);
 
-            //bugPrevention = false;
         }
         
     }

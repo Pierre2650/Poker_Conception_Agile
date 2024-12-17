@@ -12,10 +12,15 @@ public class Current_Task_Selection_Controller : MonoBehaviour
     public GameObject nbCompletedtasks;
     private TMP_Text textNbCompleted;
 
+    public GameObject nbTotaltasks;
+    private TMP_Text textNbTotal;
+
     // Start is called before the first frame update
     void Awake()
     {
         textNbCompleted = nbCompletedtasks.GetComponent<TMP_Text>();
+        textNbTotal = nbTotaltasks.GetComponent<TMP_Text>();
+
         int i = 0;
         foreach (GameObject obj in userStory) {
 
@@ -41,6 +46,9 @@ public class Current_Task_Selection_Controller : MonoBehaviour
     private void Update()
     {
         textNbCompleted.text = GameSettings.numberOfTaskEvaluted.ToString();
+
+        int temp = GameSettings.numberOfTaskEvaluted + GameSettings.numberOfTasksToEvalute;
+        textNbTotal.text = temp.ToString();
         
     }
 

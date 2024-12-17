@@ -11,7 +11,7 @@ public class Results_Controller : MonoBehaviour
     
     public List<GameObject> players_results;
 
-    private int[] evaluations = new int[GameSettings.numberOfPlayers];
+    public int[] evaluations ;
 
     public List<string> maxDebateSide = new List<string>();
     public List<string> minDebateSide = new List<string>();
@@ -21,7 +21,12 @@ public class Results_Controller : MonoBehaviour
 
     int min, max;
 
-    
+
+    private void Awake()
+    {
+       evaluations =  new int[GameSettings.numberOfPlayers];
+    }
+
 
     private void OnEnable()
     {
@@ -71,6 +76,7 @@ public class Results_Controller : MonoBehaviour
 
             if (int.TryParse(ex.Value, out int a))
             {
+                
                 evaluations[i] = a;
 
             }
@@ -115,6 +121,9 @@ public class Results_Controller : MonoBehaviour
         {
             undisputedValue = "?";
 
+        }else if (evaluations[i] == -2)
+        {
+            undisputedValue= "Coffee";
         }
         else
         {
@@ -122,6 +131,43 @@ public class Results_Controller : MonoBehaviour
         }
         
         return true;
+    }
+
+    public int findAverage(int[] eval)
+    {
+
+        float moyenne = 0;
+
+        for (int i = 0; i < eval.Length; i++)
+        {
+            moyenne += eval[i];
+        }
+
+        moyenne = moyenne/ eval.Length;
+
+
+        return findClosestPossibleValue(moyenne);
+
+    }
+
+    private int findClosestPossibleValue(float moyenne)
+    {
+
+        float[] possibleValues = { -1, 0, 1, 2, 3, 5, 8, 13, 20, 40, 100 };
+
+        float res = possibleValues[0];
+
+        for (int i = 1; i < possibleValues.Length; i++) {
+            if (Mathf.Abs(possibleValues[i] - moyenne) < Mathf.Abs(res - moyenne)){ 
+
+                res = possibleValues[i];
+            }
+        }
+
+        return (int)res;
+
+
+
     }
     private void findExtremes()
     {

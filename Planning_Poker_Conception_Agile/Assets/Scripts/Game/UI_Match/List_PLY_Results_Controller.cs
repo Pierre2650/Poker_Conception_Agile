@@ -49,8 +49,6 @@ public class List_PLY_Results_Controller: MonoBehaviour
 
     private  void generateNametags()
     {
-        Debug.Log("Generate names Is called in Results");
-
 
         //First PLayer refence separarted
         

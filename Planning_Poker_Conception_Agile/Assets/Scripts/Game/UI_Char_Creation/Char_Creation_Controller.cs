@@ -40,27 +40,44 @@ public class Char_Creation_Manager : MonoBehaviour
         }
     }
 
+    private bool nameAlreadyTaken(string target)
+    {
+        foreach (string names in GameSettings.playerNames) {
+            if (names.Contains(target)) { 
+                return true;
+            }
+        }
+
+        return false;
+
+    }
 
     public void confirmNickName()
     {
-        if(textInput.text != "")
+        if (textInput.text != "")
         {
-            GameSettings.playerNames.Add(textInput.text);
+            if (!nameAlreadyTaken(textInput.text)) { 
+                GameSettings.playerNames.Add(textInput.text);
 
-            currentPlayer++;
-            textInput.text = "";
+                currentPlayer++;
+                textInput.text = "";
 
-            if (currentPlayer == GameSettings.numberOfPlayers)
-            {
-                foreach (GameObject obj in next)
+                if (currentPlayer == GameSettings.numberOfPlayers)
                 {
-                    obj.SetActive(true);
+                    foreach (GameObject obj in next)
+                    {
+                        obj.SetActive(true);
+                    }
+
+                    thisUI.SetActive(false);
                 }
 
-                thisUI.SetActive(false);
+                showException(0);
             }
-
-            showException(0);
+            else
+            {
+                showException(3);
+            }
         }
         else
         {
@@ -89,6 +106,13 @@ public class Char_Creation_Manager : MonoBehaviour
             case 2:
 
                 textException.text = "*All fields must be Filled";
+                exception.SetActive(true);
+
+                break;
+
+            case 3:
+
+                textException.text = "*Nickname Already Taken";
                 exception.SetActive(true);
 
                 break;

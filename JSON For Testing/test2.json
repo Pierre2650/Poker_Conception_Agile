@@ -1,0 +1,89 @@
+{
+    "Backlog":[
+        {
+            "Role": "AAAA",
+            "Task": "AAAA",
+            "Obj": "AAA",
+            "Value": "10"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Avoir une interface pour pouvoir créer un nouveau profil",
+            "Obj": "Mettre à jour le trombinoscope",
+            "Value": "None"
+        },
+
+        {
+            "Role": "User",
+            "Task": "Pouvoir consulter le profil détaillé d'une identité sélectionnée",
+            "Obj": "Pouvoir contacter ou reconnaitre une personne",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Pouvoir insérer une photo de la personne dans son profil",
+            "Obj": "Le rendre reconnaissable de tous",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Pouvoir modifier un profil existant",
+            "Obj": "Mettre à jour le trombinoscope",
+            "Value": "None"
+        },
+
+        {
+            "Role": "User",
+            "Task": "Obtenir un affichage paginé avec un nombre défini d'identité",
+            "Obj": "Rendre l'affichage plus clair",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Pouvoir personnaliser la charte graphique du site",
+            "Obj": "Respecter l'identité graphique de la société",
+            "Value": "None"
+        },
+
+        {
+            "Role": "User",
+            "Task": "Pouvoir personnaliser l'identité du site",
+            "Obj": "Survivre",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Courrir COURRIR COURRIR COURRIR",
+            "Obj": "Cardio",
+            "Value": "None"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "Courrir",
+            "Obj": "Cardio",
+            "Value": "?"
+        },
+
+        {
+            "Role": "User",
+            "Task": "AAAA",
+            "Obj": "Survivre",
+            "Value": "?"
+        },
+
+        {
+            "Role": "Admin",
+            "Task": "AAAA",
+            "Obj": "Cardio",
+            "Value": "?"
+        }
+
+
+    ] 
+}

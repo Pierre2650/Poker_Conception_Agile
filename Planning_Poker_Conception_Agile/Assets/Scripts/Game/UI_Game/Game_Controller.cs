@@ -14,38 +14,28 @@ public class Game_Controller : MonoBehaviour
         if(GameSettings.numberOfTasksToEvalute == 0)
         {
 
-            next.SetActive(true);
+            endGame();
 
-            for (int i = 0; i < current.Length; i++)
-            {
-             
-                current[i].SetActive(false);
-            }
-
-            
         }
     }
 
-    private int findTargetTask(Backlog_Information target)
+    private void endGame()
     {
-        int i = 0;
-        foreach (Backlog_Information search in GameSettings.backlogList) {
+        next.SetActive(true);
 
-            if(search.Role == target.Role && search.Task == target.Task && search.Obj == target.Obj)
-            {
-                return i;
-            }
-           
+        for (int i = 0; i < current.Length; i++)
+        {
 
-            i++;
+            current[i].SetActive(false);
         }
 
-        return -1;
     }
 
+   
      public void  updateTaskState(Backlog_Information target, string value)
     {
         int i = findTargetTask(target);
+
         if (i < 0) {
             Debug.Log("Untargetable task, not found");
         }
@@ -61,5 +51,24 @@ public class Game_Controller : MonoBehaviour
         }
 
     }
+
+    private int findTargetTask(Backlog_Information target)
+    {
+        int i = 0;
+        foreach (Backlog_Information search in GameSettings.backlogList)
+        {
+
+            if (search.Role == target.Role && search.Task == target.Task && search.Obj == target.Obj)
+            {
+                return i;
+            }
+
+
+            i++;
+        }
+
+        return -1;
+    }
+
 
 }

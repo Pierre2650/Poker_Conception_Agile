@@ -39,6 +39,26 @@ public static class GameSettings
         }
     }
 
+    public static void reset()
+    {
+        gameMode = "Strict";
+        numberOfPlayers = 0;
+        playerNames.Clear();
+
+        for (int i = 0; i < 2; i++) { 
+            choiceTimer[i] = 0;
+            debateTimer[i] = 0;
+        }
+
+        backlogList.Clear();
+
+        taskBeingEvaluated = new Backlog_Information();
+
+        numberOfTaskEvaluted = 0;
+        numberOfTasksToEvalute = 0;
+
+    }
+
 
 
 

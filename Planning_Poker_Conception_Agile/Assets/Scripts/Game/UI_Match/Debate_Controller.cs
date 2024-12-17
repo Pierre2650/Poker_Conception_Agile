@@ -35,7 +35,7 @@ public class Debate_Controller : MonoBehaviour
     private float minutes = GameSettings.debateTimer[0];
     private float seconds = GameSettings.debateTimer[1];
 
-
+    [Header("Notepad")]
     public GameObject objNotes;
     private TMP_Text  textNotes;
 
