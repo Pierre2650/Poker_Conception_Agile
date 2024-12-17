@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['setgamemodetitle_0',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]],
-  ['subtract_1',['subtract',['../classUnitTest__Sum.html#a5a2d165fa6f9a3cf1f63ab9b0f2af472',1,'UnitTest_Sum']]]
+  ['remove_5ftasks_5fcontroller_0',['Remove_Tasks_Controller',['../classRemove__Tasks__Controller.html',1,'']]],
+  ['results_5fcontroller_1',['Results_Controller',['../classResults__Controller.html',1,'']]],
+  ['results_5freview_5fnext_5fcontroller_2',['Results_Review_Next_Controller',['../classResults__Review__Next__Controller.html',1,'']]]
 ];
