@@ -96,9 +96,21 @@ public class Results_Review_Next_Controller : MonoBehaviour
 
         if (GameSettings.gameMode == "Average") {
 
-            //Find average fonction, set as undisputed value
+            string avgValue;
             int avg = controller.findAverage(controller.evaluations);
-            controller.Game_Scrpt.updateTaskState(GameSettings.taskBeingEvaluated, avg.ToString());
+
+            if (avg == -1)
+            {
+                avgValue = "?";
+            }
+            else
+            {
+                avgValue = avg.ToString();
+            }
+            
+            //Find average fonction, set as undisputed value
+
+            controller.Game_Scrpt.updateTaskState(GameSettings.taskBeingEvaluated, avgValue);
         }
         else
         {

@@ -892,6 +892,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 0
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &70994024
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3954,6 +3979,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 1
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &391999369
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5790,6 +5840,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 3
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!1 &664968377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5929,6 +6004,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 20
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &682895067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6424,6 +6524,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 40
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &712640322
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7494,6 +7619,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 5
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &796360798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8561,6 +8711,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 2
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!1 &860921311
 GameObject:
   m_ObjectHideFlags: 0
@@ -11924,6 +12099,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: '?'
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &1187650179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13358,6 +13558,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 100
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &1328446564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14432,6 +14657,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 8
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &1439579694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15830,6 +16080,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 0
   vote_scrpt: {fileID: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0
 --- !u!61 &1553232634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16722,6 +16979,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: '?'
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0
 --- !u!61 &1628051737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18048,6 +18312,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: coffe
   vote_scrpt: {fileID: 0}
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0
 --- !u!61 &1757486721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18290,6 +18561,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 13
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &1774162437
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22001,6 +22297,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: Coffee
   vote_scrpt: {fileID: 93236538}
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  onHoverDuration: 0.16
 --- !u!61 &2094506943
 BoxCollider2D:
   m_ObjectHideFlags: 0
