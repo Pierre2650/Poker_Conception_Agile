@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setgamemodetitle_0',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]],
-  ['subtract_1',['subtract',['../classUnitTest__Sum.html#a5a2d165fa6f9a3cf1f63ab9b0f2af472',1,'UnitTest_Sum']]]
+  ['selection_0',['selection',['../classDescription__Controller.html#a301652548143a82756610e5926adbcce',1,'Description_Controller']]],
+  ['setgamemodetitle_1',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]]
 ];

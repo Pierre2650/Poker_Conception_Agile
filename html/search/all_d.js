@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['test_5fscenechange_0',['Test_sceneChange',['../classTest__sceneChange.html',1,'']]]
+  ['vote_5fcontroller_0',['Vote_Controller',['../classVote__Controller.html',1,'']]]
 ];
