@@ -171,13 +171,12 @@ public class Results_Controller : MonoBehaviour
     }
     private void findExtremes()
     {
-       
-        
-        min = max = evaluations[0];
 
-        for(int i = 1; i < evaluations.Length; i++)
+        min = 9999;
+        max = 0;
+
+        for(int i = 0; i < evaluations.Length; i++)
         {
-            //Verifie this later for everyone chose coffe
             if (evaluations[i] < 0)
             {
                 continue;
@@ -195,12 +194,62 @@ public class Results_Controller : MonoBehaviour
                
                 max = evaluations[i];
             }
-        } 
+        }
+
+        if (min == max)
+        {
+            int countCoffee, countInterro;
+            countCoffee = countInterro = 0;
+            //problem , just 1 numeric value,  others euther coffee or ?
+
+            for (int i = 0; i < evaluations.Length; i++)
+            {
+
+                if (evaluations[i] == -1)
+                {
+                    countInterro++;
+                }
+
+                if (evaluations[i] == -2)
+                {
+                    countCoffee++;
+                }
+
+
+            }
+
+            if (countCoffee > countInterro)
+            {
+                min = -2;
+            }
+            else
+            {
+                min = -1;
+            }
+        }
 
     }
 
     private void chooseExtremes()
     {
+        //verifie value of min
+        string minValue;
+
+        if(min == -1)
+        {
+            minValue = "?";
+
+        }else if(min == -2)
+        {
+            minValue = "Coffee";
+        }
+        else
+        {
+            minValue = min.ToString();
+        }
+
+
+
         foreach (GameObject temp in players_results)
         {
             GameObject fatherName = temp.transform.GetChild(3).gameObject;
@@ -223,7 +272,7 @@ public class Results_Controller : MonoBehaviour
             
 
 
-            if (Vote_Scrpt.results[childNameText.text] == min.ToString())
+            if (Vote_Scrpt.results[childNameText.text] == minValue)
             {
                 maxMark.SetActive(false);
                 minMark.SetActive(true);

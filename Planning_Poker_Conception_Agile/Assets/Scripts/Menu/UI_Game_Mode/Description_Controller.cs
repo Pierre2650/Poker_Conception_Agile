@@ -7,16 +7,22 @@ using NUnit.Framework.Internal;
 using NUnit.Framework;
 
 /**@file
-*@brief Class Description: Script Manipulation du champ de description 
+*@brief Class Description: Script Manipulation du champ de description dedans Game_Mode UI
 */
 
 public class Description_Controller : MonoBehaviour
 {
+    /**@Class Description_Controller.
+     * @brief Controleur de la description en fonction du mode de jeux.
+     */
 
+    ///@var descriptionField: Variable qui va contenir le GameObject du champ de description.
+    ///@var descriptionText: Variable qui  contient la composante texte du game objet
     public GameObject descriptionField;
     private TMP_Text descriptionText;
     private void Start()
     {
+        ///@brief Remplissage de la variable descriptionText grace a son GameObject descriptionField
         descriptionText = descriptionField.GetComponent<TMP_Text>();
 
     }
@@ -24,7 +30,11 @@ public class Description_Controller : MonoBehaviour
 
     public void selection(int index)
     {
-
+        /**@brief Methode appele par le dropdown Menu lorsqu'on choisie un Mode de jeux.
+        *La methode va mettre a jour le mode de jeux dans la classe static GameSettings et va remplir descriptionText avec la description adequate.
+        *
+        *@param index: Index du choix du dropdown Menu.
+        */
         switch (index)
         {
             case 0:

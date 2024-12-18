@@ -4,19 +4,19 @@ using UnityEngine;
 
 /**@file
 *@brief Class Description: Script Activation Start Game Button.
-*@author Larmat jean
 */
 
 public class Buttons_Controller : MonoBehaviour
 {
     [Header("List of Interfaces")]
-    /**@var UIs: Tableau des Interfaces Existantes
-     */
+    ///@var UIs: Tableau des Interfaces Existantes
+     
     public GameObject[] UIs;
 
     [Header("Back Button")]
-    /**@var currentUI: Game object de l'interface du menu principale
-    /@var toGoUI: Game object de l'interface pour choisir mode de jeux
+    /**@var currentUI: Game object de l'interface actuelle.
+    *@var nextUI: Game object de l'interface suivante.
+    *@var backUI: Game object de l'interface precedente. 
     */
 
     public GameObject currentUI;
@@ -44,11 +44,15 @@ public class Buttons_Controller : MonoBehaviour
 
     public void pressExitGame()
     {
+        ///@brief Methode qui quite l'applicattion.
         Application.Quit();
     }
 
     private void updateBackNextButtons()
     {
+        /**@brief Methode qui va mettre a jour les differentes inderface en fonction de l'inderface actuelle.
+        *On Utilise le tag du game object pour davoir ou on est situe.
+        */
         string sceneTag = currentUI.gameObject.tag;
 
         switch (sceneTag)
@@ -68,7 +72,6 @@ public class Buttons_Controller : MonoBehaviour
                 break;
 
             case "gConfig":
-                // change scene
 
                 backUI = UIs[1];
 
@@ -80,7 +83,7 @@ public class Buttons_Controller : MonoBehaviour
     public void pressBack()
     {
         ///@brief Methode pour revenir a l'interface precedente.
-        ///
+        
         currentUI.SetActive(false);
         backUI.SetActive(true);
 
@@ -92,7 +95,7 @@ public class Buttons_Controller : MonoBehaviour
     public void pressNext() {
 
         ///@brief Methode pour aller a l'interface suivante.
-        ///
+      
 
         currentUI.SetActive(false);
         nextUI.SetActive(true);

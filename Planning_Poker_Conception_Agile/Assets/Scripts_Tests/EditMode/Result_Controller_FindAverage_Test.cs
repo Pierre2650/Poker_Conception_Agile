@@ -12,7 +12,6 @@ public class Result_Controller_FindAverage_Test
     public void NewTestScript1SimplePasses()
     {
         //Arrange
-        UnitTest_Sum A = new UnitTest_Sum();
         Results_Controller toTest = new Results_Controller();
 
         //Act
