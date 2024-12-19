@@ -13,6 +13,8 @@ public class Card_Controller : MonoBehaviour
 
     //Curve for type of mouvement
     [SerializeField] private AnimationCurve curve;
+    [SerializeField] private AnimationCurve curveForStart;
+
 
 
     public Sprite[] valueCard;
@@ -25,13 +27,13 @@ public class Card_Controller : MonoBehaviour
     [Header("Animations")]
     public float delay = 0;
     private float startAnimationElapsed = 0;
-    private float startAnimationD = 0.5f;
+    private float startAnimationD = 0.2f;
 
     private float onHoverElapsedT = 0;
     private float onHoverDuration = 0.16f;
 
     private float flipAnimationElapsed = 0;
-    private float flipAnimationD = 0.2f;
+    private float flipAnimationD = 0.3f;
 
     private float onClickElapsed = 0;
     private float onClickAnimationD = 0.1f;
@@ -220,7 +222,7 @@ public class Card_Controller : MonoBehaviour
 
             percentageDur = startAnimationElapsed / startAnimationD;
 
-            transform.localPosition = Vector2.Lerp(start, endPos, curve.Evaluate(percentageDur));
+            transform.localPosition = Vector2.Lerp(start, endPos, curveForStart.Evaluate(percentageDur));
 
             startAnimationElapsed += Time.deltaTime;
             yield return null;

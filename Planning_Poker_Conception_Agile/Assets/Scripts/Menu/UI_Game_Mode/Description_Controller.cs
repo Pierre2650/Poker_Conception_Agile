@@ -7,13 +7,13 @@ using NUnit.Framework.Internal;
 using NUnit.Framework;
 
 /**@file
-*@brief Class Description: Script Manipulation du champ de description dedans Game_Mode UI
+*@brief Class Description: Script Manipulation du champ de description dedans Game Mode UI et Mise a jour du mode de jeux dans la classe statique GameSettings
 */
 
 public class Description_Controller : MonoBehaviour
 {
     /**@class Description_Controller.
-     * @brief Controleur de la description en fonction du mode de jeux.
+     * @brief Controleur de la description en fonction du mode de jeux et mise mise a jour du mode de jeux.
      * @var descriptionField 
      * @brief Variable qui va contenir le GameObject du champ de description.
      * 

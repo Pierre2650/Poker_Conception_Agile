@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 
 /**@file
-*@brief Class Description: Script Activation Start Game Button.
+*@brief Class Description: Script Qui va gerer la mise a jour des valeur des secondes et minutes pour le temp de choix dans le jeux
 */
 
 public class Choice_Timer_Controller : MonoBehaviour
@@ -18,9 +18,9 @@ public class Choice_Timer_Controller : MonoBehaviour
      * @brief Variable qui va contenir le GameObject du champ de texte qui definila valuer des secondes
      * 
      * @var minutesText 
-     * @brief Variable qui  contient la composante texte du GameObjet minute
+     * @brief Variable qui  contient la composante texte du GameObject minute
      * @var secondsText 
-     * @brief Variable qui  contient la composante texte du GameObjet seconds
+     * @brief Variable qui  contient la composante texte du GameObject seconds
      */
 
 
