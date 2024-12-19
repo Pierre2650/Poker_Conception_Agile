@@ -3,13 +3,44 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/**@file
+*@brief Class Description: Script Qui est chargee de la generation de Nametags dans l'interface Resultat
+*/
+
+
 public class List_PLY_Results_Controller: MonoBehaviour
 {
+    /**@class List_PLY_Results_Controller
+    * @brief Controlleur qui va generer et afficher des names tags de chaque joueur dans l'interface avec leur choix de vote
+    * 
+    * @var GameObject parentObject
+    * @brief GameObject parent des Tags a generer.
+    * 
+    * @var GameObject prefab
+    * @brief Prefab d'un modele de tag de base
+    * 
+    * @var GameObject toGetPosition
+    * @brief Cette GameObject Commence avec la reference du seul nametag qui n'est pas un prefab (le premiere), besoin de ce si pour avoir un position relative pour les autres balises.
+    * 
+    * @var RectTransform rtToGetPosition
+    * @brief Variable qui  contient la composante RectTransform du GameObject toGetPosition.
+    * 
+    * @var float distanceFromEachother
+    * @brief La distance entre chaque name tag
+    * 
+    *@var Vote_Controller Rote_Scrpt
+    *@brief Script Controlleur de la partie vote du match
+    *@var Results_Controller Results_Scrpt
+    *@brief Script Controlleur de la partie resultat du match
+    *
+    *@var List<GameObject> listOfResults
+    *@brief Liste de GameObject des differentes valises
+    *
+    */
+
     public GameObject parentObject;
 
     public GameObject prefab;
-
-    public string testTxt;
 
     public GameObject toGetPosition;
     protected RectTransform rtToGetPosition;
@@ -24,17 +55,13 @@ public class List_PLY_Results_Controller: MonoBehaviour
 
     public List<GameObject> listOfResults = new List<GameObject>();
 
-    
-    private void Awake()
-    {
-   
-
-    }
-
 
     private void OnEnable()
     {
-        
+        /** @brief On va generer les balises, ensuite on va transmetre au controlleur des resultat un liste avec toute les balises genere puis reinitialiser cette liste pour le prochain match
+         * et reinitialiser rtToGetPosition avec la position de la seul balise qui n'est pas un prefab.
+         *
+         */
 
         generateNametags();
         
@@ -49,6 +76,7 @@ public class List_PLY_Results_Controller: MonoBehaviour
 
     private  void generateNametags()
     {
+        ///@Brief Generation des noms en fonction de nombres de joueurs
 
         //First PLayer refence separarted
         

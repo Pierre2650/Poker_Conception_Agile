@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 
 /**@file
-*@brief Class Description: Script Qui est chargee de la generation de Nametags dans l'interface
+*@brief Class Description: Script Qui est chargee de la generation de Nametags dans l'interface Game
 */
 
 

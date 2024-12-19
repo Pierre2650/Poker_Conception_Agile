@@ -12,8 +12,8 @@ using UnityEngine.SceneManagement;
 
 public class Coffee_Controller : MonoBehaviour
 {
-    /**@class Coffee_Controller.
-   * @brief Controlleur qui gerer les differentes fonctionalites de cette interface. Il va sauvegarder le Backlog current dans un JSON dans le repertoire Documents de la machine.
+   /**@class Coffee_Controller.
+   * @brief Controlleur qui gere les differentes fonctionalites de cette interface. Il va sauvegarder le Backlog current dans un JSON dans le repertoire Documents de la machine.
    * Il va definir la functionalite des differentes buttons.
    * 
    * @var GameObject current

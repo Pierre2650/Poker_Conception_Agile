@@ -107,8 +107,12 @@ public class Debate_Controller : MonoBehaviour
         max = vote_scrpt.results[results_Scrpt.maxDebateSide[0]];
         min = vote_scrpt.results[results_Scrpt.minDebateSide[0]];
 
-        maxCard.GetComponent<SpriteRenderer>().sprite = cardSprites[findSprite(max)];
-        minCard.GetComponent<SpriteRenderer>().sprite = cardSprites[findSprite(min)];
+
+
+       maxCard.GetComponent<SpriteRenderer>().sprite = cardSprites[findSprite(max)];
+       minCard.GetComponent<SpriteRenderer>().sprite = cardSprites[findSprite(min)];
+
+     
 
     }
 

@@ -30,6 +30,8 @@ public class Go_button_controller : MonoBehaviour
     public GameObject[] userStory = new GameObject[3];
     private TMP_Text[] contenu = new TMP_Text[3];
 
+    public Game_Cards_Animations_Controller[] animations;
+
     private void Start()
     {
         ///@brief Remplissage des variables grace a ces GameObject correspondants  quand l'objet est cree
@@ -44,6 +46,17 @@ public class Go_button_controller : MonoBehaviour
     }
 
     public void goButton()
+    {
+
+        ///@brief Methode utiliser par le butto "Go", elle va executer les animations de sortie .
+        for(int i = 0; i <  animations.Length; i++)
+        {
+            animations[i].callEnd(i);
+        }
+        
+    }
+
+    public void nextStage()
     {
         ///@brief Methode utiliser par le butto "Go", elle enregistre le choix de la tache a evaluer et active les GameObject suivant et Desactive les GameObjects courrants.
         GameSettings.taskBeingEvaluated.Role = contenu[0].text;

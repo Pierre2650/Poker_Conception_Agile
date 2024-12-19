@@ -20,6 +20,7 @@ public class Card_Controller : MonoBehaviour
     public Sprite[] valueCard;
     private SpriteRenderer spriteComponent;
 
+    private bool clickable  = false;
 
 
 
@@ -64,7 +65,7 @@ public class Card_Controller : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && onObject) {
+        if (Input.GetMouseButtonDown(0) && onObject && clickable) {
 
             StartCoroutine(onClick());
             
@@ -111,6 +112,7 @@ public class Card_Controller : MonoBehaviour
         spriteComponent.color = Color.white;
         spriteComponent.sprite = valueCard[0];
         transform.localScale = new Vector2(0.95f, 0.95f);
+        clickable = false;
     }
 
     private IEnumerator onClick()
@@ -278,6 +280,7 @@ public class Card_Controller : MonoBehaviour
 
         flipAnimationElapsed = 0;
 
+        clickable = true;
         
     }
 
