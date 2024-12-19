@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['instance_0',['instance',['../classBack__Ground__Singleton.html#ad9a9d28c906d9fdad271c4b4efabba3d',1,'Back_Ground_Singleton']]]
+  ['backui_0',['backUI',['../classButtons__Controller.html#a180d89ecf881413f7666e18f5e799203',1,'Buttons_Controller']]]
 ];
