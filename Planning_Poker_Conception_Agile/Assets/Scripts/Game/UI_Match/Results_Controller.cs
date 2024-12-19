@@ -273,36 +273,52 @@ public class Results_Controller : MonoBehaviour
             }
         }
 
+        Debug.Log("Min = " + min + "  Max = " + max);
+
         if (min == max)
         {
-            int countCoffee, countInterro;
-            countCoffee = countInterro = 0;
-            //problem , just 1 numeric value,  others euther coffee or ?
+            noMinimum();
+            
+        }
 
-            for (int i = 0; i < evaluations.Length; i++)
+        if(max == 0 &&  min == 9999)
+        {
+            max = -1;
+            min = -2;
+
+        }
+
+    }
+
+    private void noMinimum()
+    {
+        int countCoffee, countInterro;
+        countCoffee = countInterro = 0;
+        //problem , just 1 numeric value,  others euther coffee or ?
+
+        for (int i = 0; i < evaluations.Length; i++)
+        {
+
+            if (evaluations[i] == -1)
             {
-
-                if (evaluations[i] == -1)
-                {
-                    countInterro++;
-                }
-
-                if (evaluations[i] == -2)
-                {
-                    countCoffee++;
-                }
-
-
+                countInterro++;
             }
 
-            if (countCoffee > countInterro)
+            if (evaluations[i] == -2)
             {
-                min = -2;
+                countCoffee++;
             }
-            else
-            {
-                min = -1;
-            }
+
+
+        }
+
+        if (countCoffee > countInterro)
+        {
+            min = -2;
+        }
+        else
+        {
+            min = -1;
         }
 
     }
@@ -314,6 +330,8 @@ public class Results_Controller : MonoBehaviour
          */
     
         string minValue;
+        string maxValue;
+
 
         if(min == -1)
         {
@@ -328,6 +346,17 @@ public class Results_Controller : MonoBehaviour
             minValue = min.ToString();
         }
 
+        if (max == -1)
+        {
+            maxValue = "?";
+
+        }
+        else
+        {
+            maxValue = max.ToString();
+        }
+
+
 
 
         foreach (GameObject temp in players_results)
@@ -341,7 +370,7 @@ public class Results_Controller : MonoBehaviour
             GameObject minMark = temp.transform.GetChild(1).gameObject;
 
 
-            if (Vote_Scrpt.results[childNameText.text] == max.ToString())
+            if (Vote_Scrpt.results[childNameText.text] == maxValue)
             {
                 
                 maxMark.SetActive(true);

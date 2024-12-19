@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using SimpleFileBrowser;
 using System.IO;
-using Unity.Plastic.Newtonsoft.Json;
 
 /**@file
 *@brief Class Description: Script Qui est chargee de la gestion de l'interface End_Game (ou fin du jeu)

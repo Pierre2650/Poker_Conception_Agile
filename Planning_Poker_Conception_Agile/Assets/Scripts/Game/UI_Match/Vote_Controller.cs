@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static Codice.CM.Common.CmCallContext;
-using static PlasticGui.GetProcessName;
 
 /**@file
 *@brief Class Description: Script Qui est chargee de la gestion de l'interface Vote
@@ -21,6 +19,13 @@ public class Vote_Controller : MonoBehaviour
     * 
     * @var TMP_Text textCurrentPlayer
     * @brief Texte composant de le GameObject objCurrentPlayer
+    * 
+    * @var GameObject objGameMode
+    * @brief GameObject representant l'affichage du Mode du jeu.
+    * 
+    * @var TMP_Text textGameMode
+    * @brief Texte composant de le GameObject objGameMode
+    * 
     * 
     * @var GameObject objMinutes
     * @brief GameObject representant l'affichage des minutes du chronometre.
@@ -76,6 +81,10 @@ public class Vote_Controller : MonoBehaviour
     public GameObject objCurrentPlayer;
     private TMP_Text textCurrentPlayer;
 
+    [Header("Game Mode")]
+    public GameObject objGameMode;
+    private TMP_Text textGamemode;
+
     [Header("Time")]
     public GameObject objMinutes;
     private TMP_Text textMinutes;
@@ -120,6 +129,8 @@ public class Vote_Controller : MonoBehaviour
 
         textNotepad = objNotepad.GetComponent<TMP_Text>();
 
+        textGamemode = objGameMode.GetComponent<TMP_Text>();
+
     }
 
     
@@ -146,6 +157,8 @@ public class Vote_Controller : MonoBehaviour
          * Met a jour le chronometre tant que les minutes ne sont pas a zero.
          * Si le temps est ecoule, appelle `choiceMade` avec une valeur par defaut ("?").
          */
+
+        textGamemode.text = GameSettings.gameMode+" Mode";
 
         if (currentPlayerIndex == GameSettings.numberOfPlayers) {
 
