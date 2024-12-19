@@ -34,16 +34,16 @@ L'objectif de cette application est de rendre cette pratique Scrum plus intéres
 
 
 ## Utilisation
-1.Lancez l’application depuis Unity ou un exécutable généré.
-2. Paramétrer votre jeux et sélectionnez ou créer un Backlog avec des taches a estimer.
-3. Joeur choisissent leur Pseudo.
-4. Le jeux commence, l'equipe ce met d'accord pour choisir un tache a estimer.
-5. Le match commence, votation de chaque joeur
-6. Resume des choix des joueurs
-7.1 Soit il y a unanimite, le match se termine et on choisi la tache suivante
-7.2 Soit le Debat commence
-7.3 Soit les joueurs choisissent la carte cafe
-8. La boucle se repete jusqu'a que toute les taches soient valide ou on ferme l'application.
+1. **Lancez l’application** depuis Unity ou un exécutable généré.
+2. **Paramétrez votre jeu** et sélectionnez ou créez un backlog avec des tâches à estimer.
+3. **Les joueurs choisissent leur pseudo**.
+4. **Le jeu commence** : l’équipe se met d’accord pour choisir une tâche à estimer.
+5. **Le vote commence** : chaque joueur émet sa propre estimation.
+6. **Résumé des choix des joueurs**.
+   1. Si **unanimité** : le match se termine et on choisit la tâche suivante.
+   2. Si **le débat commence**.
+   3. Si **les joueurs choisissent la carte café**.
+7. La **boucle se répète** jusqu’à ce que toutes les tâches soient validées ou que l’application soit fermée.
 
 ## Technologie utilisées
 Unity - Moteur de jeu.
