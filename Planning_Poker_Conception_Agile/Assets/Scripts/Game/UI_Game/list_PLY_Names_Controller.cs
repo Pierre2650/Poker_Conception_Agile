@@ -3,23 +3,45 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/**@file
+*@brief Class Description: Script Qui est chargee de la generation de Nametags dans l'interface
+*/
+
+
 public class list_PLY_Names_Controller : MonoBehaviour
 {
+    /**@class list_PLY_Names_Controller
+    * @brief Controlleur qui va generer et afficher des names tags de chaque joueur dans l'interface
+    * 
+    * @var GameObject parentObject
+    * @brief GameObject parent des Tags a generer.
+    * 
+    * @var GameObject prefab
+    * @brief Prefab d'un modele de tag de base
+    * 
+    * @var GameObject toGetPosition
+    * @brief Cette GameObject Commence avec la reference du seul nametag qui n'est pas un prefab (le premiere), besoin de ce si pour avoir un position relative pour les autres balises.
+    * 
+    * @var RectTransform rtToGetPosition
+    * @brief Variable qui  contient la composante RectTransform du GameObject toGetPosition.
+    * 
+    * @var float distanceFromEachother
+    * @brief La distance entre chaque name tag
+    * 
+    */
+
     public GameObject parentObject;
 
     public GameObject prefab;
 
-    public string testTxt;
-
     public GameObject toGetPosition;
-    protected RectTransform rtToGetPosition;
+    private RectTransform rtToGetPosition;
 
     public float distanceFromEachother;
 
-    //variable for relative position\
-
     private void Awake()
     {
+
         rtToGetPosition = toGetPosition.GetComponent<RectTransform>();
 
         GameObject childObjTextToGetPosition = toGetPosition.transform.GetChild(1).gameObject;
@@ -30,21 +52,26 @@ public class list_PLY_Names_Controller : MonoBehaviour
 
     private void Start()
     {
+
         generateNametags();
 
     }
    
 
 
-    private void generateNametags()
+    public void generateNametags()
     {
-
-        //1.set parent
-        //2. first instantiate set position
-        //3. get text child
-        //4. get text component
-        //5. set text
-        //6. continue to next child
+        /**
+         * @brief Methode qui genere des etiquettes de nom pour chaque joueur en fonction des parametres de configuration.
+         * 
+         * Cette methode effectue les etapes suivantes :
+         * 1. Definit le parent de l'objet genere.
+         * 2. Instancie l'objet prefab et definit sa position.
+         * 3. Recupere l'enfant contenant le texte.
+         * 4. Recupere le composant texte de l'enfant.
+         * 5. Definit le texte avec le nom du joueur.
+         * 6. Passe a l'objet suivant.
+         */
 
 
         for (int i = 1; i < GameSettings.numberOfPlayers ; i++)

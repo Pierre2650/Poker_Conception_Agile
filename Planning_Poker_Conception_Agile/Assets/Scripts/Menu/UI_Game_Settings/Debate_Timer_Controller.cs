@@ -54,7 +54,7 @@ public class Debate_Timer_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ///@brief Si l'option "pas de temp " est false,  chaque frame on  mets a jour la valeur les valeur de minutes et secondes de base pour le debat.
+        ///@brief Si l'option "pas de temp " est false,  chaque frame on  mets a jour les valeur de minutes et secondesb pour le debat.
         if (!noTime)
         {
             GameSettings.debateTimer[0] = int.Parse(minutesText.text);

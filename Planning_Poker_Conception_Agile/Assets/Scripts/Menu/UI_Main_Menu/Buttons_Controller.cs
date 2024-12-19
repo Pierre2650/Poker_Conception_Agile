@@ -18,7 +18,8 @@ public class Buttons_Controller : MonoBehaviour
     public GameObject[] UIs;
 
     [Header("Back Button")]
-    /**@var GameObject currentUI @brief Game object de l'interface actuelle.
+    /**@var GameObject currentUI 
+    * @brief Game object de l'interface actuelle.
     *@var GameObject nextUI 
     *@brief Game object de l'interface suivante.
     *@var GameObject backUI 
