@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['title_0',['Title',['../classsetGameModeTitle.html#aed90099a7c71fa50079d366b385749e9',1,'setGameModeTitle']]]
+  ['role_0',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]]
 ];
