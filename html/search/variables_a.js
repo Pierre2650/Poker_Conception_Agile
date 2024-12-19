@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['results_5fscrpt_0',['results_Scrpt',['../classCoffee__Controller.html#a316fa561b14944a51d867a1b1d1387b8',1,'Coffee_Controller']]],
-  ['role_1',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]],
-  ['rttogetposition_2',['rtToGetPosition',['../classList__PLY__Results__Controller.html#a01a153e909d4a89217aa43201e1c4c40',1,'List_PLY_Results_Controller']]]
+  ['parentobject_0',['parentobject',['../classlist__PLY__Names__Controller.html#a8a8dfdd7798b2a7854548cf16c661b4d',1,'list_PLY_Names_Controller.parentObject'],['../classList__PLY__Results__Controller.html#a07828c8ae875754b091011a11623cce8',1,'List_PLY_Results_Controller.parentObject']]],
+  ['playernumber_1',['playerNumber',['../classChar__Creation__Manager.html#a18d4a22e1227e6391667de7884dea0ca',1,'Char_Creation_Manager']]],
+  ['players_5fresults_2',['players_results',['../classResults__Controller.html#ab0dff959c1d76220b8f0e0e64d6fe2f3',1,'Results_Controller']]],
+  ['prefab_3',['prefab',['../classlist__PLY__Names__Controller.html#a174ad37d33759d7f4b77dea0188f6fb3',1,'list_PLY_Names_Controller.prefab'],['../classList__PLY__Results__Controller.html#a3b31f1a28da81e92c8ad83641e0718ff',1,'List_PLY_Results_Controller.prefab']]]
 ];

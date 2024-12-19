@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['nb_5fplayers_5finput_5fvalue_5fverification_2ecs_0',['Nb_Players_Input_Value_Verification.cs',['../Nb__Players__Input__Value__Verification_8cs.html',1,'']]],
-  ['nbcompletedtasks_1',['nbCompletedtasks',['../classCurrent__Task__Selection__Controller.html#a59877c17eb71f2142025cc5a2e63a459',1,'Current_Task_Selection_Controller']]],
-  ['nbtasks_2',['nbTasks',['../classEnd__Game__Controller.html#aa723241f1b7cb0889b632454a58df3fe',1,'End_Game_Controller']]],
-  ['nbtext_3',['nbText',['../classCurrent__NB__Tasks.html#aba14ef860cc191797f5b9bcd50d5d6c7',1,'Current_NB_Tasks']]],
-  ['nbtotaltasks_4',['nbTotaltasks',['../classCurrent__Task__Selection__Controller.html#aa5f7591250b89d26bc5628411197841b',1,'Current_Task_Selection_Controller']]],
-  ['newcustomtask_5',['newCustomTask',['../classCustom__Tasks.html#a0b641f025e39bd576a072843b41426ec',1,'Custom_Tasks']]],
-  ['next_6',['next',['../classGame__settings__Start__Button__Controller.html#ad414df3d7ec26e901309e76dcc6005d0',1,'Game_settings_Start_Button_Controller']]],
-  ['nextbutton_7',['nextbutton',['../classResults__Review__Next__Controller.html#af2faa0d14e0955c0b8249ac5b4506108',1,'Results_Review_Next_Controller']]],
-  ['nextstage_8',['nextStage',['../classGo__button__controller.html#ab6b39a7376c2c68db20c2fadaeb3a1f1',1,'Go_button_controller']]],
-  ['nextui_9',['nextUI',['../classButtons__Controller.html#adfa039b2d8f981cd39aac1b171d99e66',1,'Buttons_Controller']]],
-  ['notecard_10',['noteCard',['../classEnd__Game__Controller.html#af9ebcd24623bf7bc66f18bf453de6c37',1,'End_Game_Controller']]],
-  ['notimerbutton_11',['noTimerButton',['../classDebate__Timer__Controller.html#a7af923ab1a2ae03add8c375b9cf152e8',1,'Debate_Timer_Controller']]]
+  ['matchnotui_0',['matchNotUi',['../classResults__Review__Next__Controller.html#a041ffd9f2f6bddff84f2557500f9e61f',1,'Results_Review_Next_Controller']]],
+  ['maxcard_1',['maxCard',['../classDebate__Controller.html#aae93c8b9f20c186a8df926b4ca902719',1,'Debate_Controller']]],
+  ['maxdebateside_2',['maxDebateSide',['../classResults__Controller.html#a18de1b0fea40d6bd22ae1f99ac901f74',1,'Results_Controller']]],
+  ['mincard_3',['minCard',['../classDebate__Controller.html#aa12cfbc2a382bc035173b9e5f8aea4bb',1,'Debate_Controller']]],
+  ['mindebateside_4',['minDebateSide',['../classResults__Controller.html#a33d95f488679984977f89d7896e02904',1,'Results_Controller']]],
+  ['minutes_5',['minutes',['../classDebate__Timer__Controller.html#ac233ba162e920b125180c9e52bfc1281',1,'Debate_Timer_Controller.minutes'],['../classIncrease__Decrease__Buttons.html#aca128ac1ec5019873bdc325926a13b0e',1,'Increase_Decrease_Buttons.minutes']]]
 ];

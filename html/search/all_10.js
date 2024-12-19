@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['updatetaskstate_0',['updateTaskState',['../classGame__Controller.html#a64f7af38394361cb98b9642203957fc3',1,'Game_Controller']]]
+  ['task_0',['Task',['../classBacklog__Information.html#a2f3cfd3c70832fe123407d27d09abce4',1,'Backlog_Information']]],
+  ['textnotepad_1',['textNotepad',['../classVote__Controller.html#ad9a6f615c5089d771b836791d1a6d2f1',1,'Vote_Controller']]],
+  ['thisui_2',['thisUI',['../classChar__Creation__Manager.html#a02dc5ed824667d340a0a2f97a18b37fe',1,'Char_Creation_Manager']]],
+  ['title_3',['Title',['../classsetGameModeTitle.html#aed90099a7c71fa50079d366b385749e9',1,'setGameModeTitle']]],
+  ['togetposition_4',['togetposition',['../classlist__PLY__Names__Controller.html#a892079340204cd058c2c5c5ae2cbfe88',1,'list_PLY_Names_Controller.toGetPosition'],['../classList__PLY__Results__Controller.html#a4e6e687258b8d6548f92f5b6e36441f6',1,'List_PLY_Results_Controller.toGetPosition']]]
 ];

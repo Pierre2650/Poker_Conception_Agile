@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['seconds_0',['seconds',['../classChoice__Timer__Controller.html#a213a830380c2dd8f8ce6c8245f9cdc43',1,'Choice_Timer_Controller.seconds'],['../classDebate__Timer__Controller.html#aaeccae59496b2e68912c16f5fff50221',1,'Debate_Timer_Controller.seconds'],['../classIncrease__Decrease__Buttons.html#a6292269cf93b87dd154dcfb71b92e6e8',1,'Increase_Decrease_Buttons.seconds']]],
-  ['selection_1',['selection',['../classDescription__Controller.html#a301652548143a82756610e5926adbcce',1,'Description_Controller']]],
-  ['setgamemodetitle_2',['setGameModeTitle',['../classsetGameModeTitle.html',1,'']]],
-  ['setgamemodetitle_2ecs_3',['setGameModeTitle.cs',['../setGameModeTitle_8cs.html',1,'']]],
-  ['startdebate_4',['startDebate',['../classResults__Review__Next__Controller.html#a24c26389c01420872c0d35f72a4e7b0b',1,'Results_Review_Next_Controller']]],
-  ['startgame_5',['startGame',['../classGame__settings__Start__Button__Controller.html#a349a6008a4385de933a00aeb8ca811e1',1,'Game_settings_Start_Button_Controller']]]
+  ['remove_5ftasks_5fcontroller_0',['Remove_Tasks_Controller',['../classRemove__Tasks__Controller.html',1,'']]],
+  ['remove_5ftasks_5fcontroller_2ecs_1',['Remove_Tasks_Controller.cs',['../Remove__Tasks__Controller_8cs.html',1,'']]],
+  ['removetask_2',['removeTask',['../classRemove__Tasks__Controller.html#aa40ffcf0a74b6abeeea659f4447d4b67',1,'Remove_Tasks_Controller']]],
+  ['reroll_3',['reRoll',['../classCurrent__Task__Selection__Controller.html#a98d8e583dbba7a7e0332a3fed6be1d55',1,'Current_Task_Selection_Controller']]],
+  ['resetmarksfirstname_4',['resetMarksFirstName',['../classResults__Controller.html#ac2f0402a057572a891d6656120e08613',1,'Results_Controller']]],
+  ['restart_5',['restart',['../classResults__Controller.html#a837418c687d57bc8f5cdb2103d36af57',1,'Results_Controller']]],
+  ['restartvote_6',['reStartVote',['../classVote__Controller.html#a41d2d79f6c2aeb17347feeba96f81a3d',1,'Vote_Controller']]],
+  ['results_7',['results',['../classVote__Controller.html#ac9771e99e8d0ba1fafb6c19809a61df8',1,'Vote_Controller']]],
+  ['results_5fcontroller_8',['Results_Controller',['../classResults__Controller.html',1,'']]],
+  ['results_5fcontroller_2ecs_9',['Results_Controller.cs',['../Results__Controller_8cs.html',1,'']]],
+  ['results_5freview_5fnext_5fcontroller_10',['Results_Review_Next_Controller',['../classResults__Review__Next__Controller.html',1,'']]],
+  ['results_5freview_5fnext_5fcontroller_2ecs_11',['Results_Review_Next_Controller.cs',['../Results__Review__Next__Controller_8cs.html',1,'']]],
+  ['results_5fscrpt_12',['results_scrpt',['../classCoffee__Controller.html#a316fa561b14944a51d867a1b1d1387b8',1,'Coffee_Controller.results_Scrpt'],['../classDebate__Controller.html#aa9d49b1adbf61fe6eb217c9801812b86',1,'Debate_Controller.results_Scrpt'],['../classVote__Controller.html#a97385504dd101bf793894ee07e50a272',1,'Vote_Controller.results_Scrpt']]],
+  ['role_13',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]],
+  ['round_14',['round',['../classVote__Controller.html#a8373be69363e19e1df9ce169b4491e75',1,'Vote_Controller']]],
+  ['rttogetposition_15',['rtToGetPosition',['../classList__PLY__Results__Controller.html#a01a153e909d4a89217aa43201e1c4c40',1,'List_PLY_Results_Controller']]]
 ];

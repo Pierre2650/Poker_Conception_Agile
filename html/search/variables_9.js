@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['parentobject_0',['parentobject',['../classlist__PLY__Names__Controller.html#a8a8dfdd7798b2a7854548cf16c661b4d',1,'list_PLY_Names_Controller.parentObject'],['../classList__PLY__Results__Controller.html#a07828c8ae875754b091011a11623cce8',1,'List_PLY_Results_Controller.parentObject']]],
-  ['playernumber_1',['playerNumber',['../classChar__Creation__Manager.html#a18d4a22e1227e6391667de7884dea0ca',1,'Char_Creation_Manager']]],
-  ['prefab_2',['prefab',['../classlist__PLY__Names__Controller.html#a174ad37d33759d7f4b77dea0188f6fb3',1,'list_PLY_Names_Controller.prefab'],['../classList__PLY__Results__Controller.html#a3b31f1a28da81e92c8ad83641e0718ff',1,'List_PLY_Results_Controller.prefab']]]
+  ['obj_0',['Obj',['../classBacklog__Information.html#a3ae9b4bd8dacf8f72334f79b5769cbc6',1,'Backlog_Information']]],
+  ['objcolon_1',['objColon',['../classDebate__Controller.html#a4d8b8213488f836bfc150b6d490c242c',1,'Debate_Controller']]],
+  ['objcurrentplayer_2',['objCurrentPlayer',['../classVote__Controller.html#a695bab186cbd2a10273d2e41df35ae6d',1,'Vote_Controller']]],
+  ['objfilepath_3',['objFilePath',['../classCoffee__Controller.html#a4fc621ba2b6220dadfb2f799e4ff7bdc',1,'Coffee_Controller']]],
+  ['objmaxplnames_4',['objMaxPLNames',['../classDebate__Controller.html#aff38b9dfaf55e9cb61f8d929454de411',1,'Debate_Controller']]],
+  ['objminplnames_5',['objMinPLNames',['../classDebate__Controller.html#afb6bcc13635661c2d776a835c33d8d0b',1,'Debate_Controller']]],
+  ['objminutes_6',['objminutes',['../classDebate__Controller.html#aacbe94b68d064b712462dad625db6f97',1,'Debate_Controller.objMinutes'],['../classVote__Controller.html#af598f5feb3e5beb06632160bd828b014',1,'Vote_Controller.objMinutes']]],
+  ['objnbround_7',['objNbRound',['../classVote__Controller.html#ac1144002c7b708603d2c6cd85d993d50',1,'Vote_Controller']]],
+  ['objnotepad_8',['objNotepad',['../classVote__Controller.html#a5adc66cb2e3e35fb4e7ab1d5de27f61b',1,'Vote_Controller']]],
+  ['objnotes_9',['objNotes',['../classDebate__Controller.html#a418818308e2447dfd3313f879d545d3e',1,'Debate_Controller']]],
+  ['objseconds_10',['objseconds',['../classDebate__Controller.html#a317036fa46b79739837cd72ea88d65fb',1,'Debate_Controller.objSeconds'],['../classVote__Controller.html#a6f62cad53aa42917bfa706e71c1c5234',1,'Vote_Controller.objSeconds']]]
 ];
