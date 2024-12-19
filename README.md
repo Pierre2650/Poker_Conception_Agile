@@ -8,7 +8,7 @@ L'objectif de cette application est de rendre cette pratique Scrum plus intéres
 
 ## Images Contenu API
 ### Parametrage jeux
-![Parametrage](Images/Exemple.jpg)
+![Parametrage](Images/Exemple1.jpg)
 ## Fonctionalites
 
 ## Test Application
