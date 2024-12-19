@@ -4,8 +4,46 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**@file
+*@brief Class Description: Script Qui est chargee de la gestion de l'interface Resultat
+*/
 public class Results_Controller : MonoBehaviour
 {
+    /**
+    * @class Results_Controller
+    * @brief Controleur responsable de la gestion et affichage des  resultats apres les votes.
+    * 
+    * @var Vote_Controller Vote_Scrpt
+    * @brief Script controleur des votes, permettant d'acceder aux resultats des votes.
+    * 
+    * @var Game_Controller Game_Scrpt
+    * @brief Script de controleur du jeu.
+    * 
+    * @var List<GameObject> players_results
+    * @brief Liste des objets representant les resultats des joueurs.
+    * 
+    * @var int[] evaluations
+    * @brief Tableau contenant les evaluations numeriques des resultats des joueurs.
+    * 
+    * @var List<string> maxDebateSide
+    * @brief Liste des noms des joueurs du cote ayant la valeur maximale lors du debat.
+    * 
+    * @var List<string> minDebateSide
+    * @brief Liste des noms des joueurs du cote ayant la valeur minimale lors du debat.
+    * 
+    * @var bool unanimity
+    * @brief Indicateur de si tous les joueurs ont vote pour la meme valeur.
+    * 
+    * @var string undisputedValue
+    * @brief Valeur non disputee choisie par l'unanimite.
+    * 
+    * @var int min
+    * @brief Indice ou valeur minimale des resultats des joueurs.
+    * 
+    * @var int max
+    * @brief Indice ou valeur maximale des resultats des joueurs.
+    */
+
     public Vote_Controller Vote_Scrpt;
     public Game_Controller Game_Scrpt;
     
@@ -30,11 +68,21 @@ public class Results_Controller : MonoBehaviour
 
     private void OnEnable()
     {
+        /**
+         * @brief Methode executee lorsque le script est active.
+         * Initialise les actions necessaires a la mise a jour des resultats.
+         */
         doActions();
     }
 
     public void doActions()
     {
+        /**
+         * @brief Effectue les actions principales pour mettre a jour les resultats.
+         * Reinitialise les marques, convertit les valeurs des votes en entiers,
+         * verifie l'unanimite et, si necessaire, trouve et selectionne les valeurs extremes.
+         */
+
         resetMarksFirstName();
 
         valuesToINT();
@@ -49,8 +97,13 @@ public class Results_Controller : MonoBehaviour
 
     }
 
-    private void resetMarksFirstName()
+    public void resetMarksFirstName()
     {
+        /**
+         * @brief Reinitialise les marques et noms associes aux resultats des joueurs. Les marques etant le yin (Valeur Max) er le yang (Valeur Min)
+         * Cache les marques maximales et minimales pour une mise a jour future.
+         */
+
         GameObject fatherName = players_results[0].transform.GetChild(3).gameObject;
         GameObject childName = fatherName.transform.GetChild(1).gameObject;
 
@@ -68,6 +121,10 @@ public class Results_Controller : MonoBehaviour
 
     private void valuesToINT()
     {
+        /**
+         * @brief Convertit les valeurs des votes en entiers et les stocke dans le tableau `evaluations`.
+         * Traite egalement les valeurs speciales comme "?" et "Coffee".
+         */
         int i = 0;
 
         foreach (var ex in Vote_Scrpt.results)
@@ -102,6 +159,10 @@ public class Results_Controller : MonoBehaviour
 
     private bool checkUnanimity()
     {
+        /**
+         * @brief Verifie si tous les votes sont unanimes.
+         * @return True si tous les joueurs ont vote pour la meme valeur, sinon False.
+         */
         int precedent = evaluations[0];
         int i;
 
@@ -136,6 +197,12 @@ public class Results_Controller : MonoBehaviour
     public int findAverage(int[] eval)
     {
 
+        /**
+         * @brief Calcule la moyenne des évaluations et trouve la valeur possible la plus proche de cette moyenne.
+         * @param eval Tableau des évaluations.
+         * @return La valeur la plus proche de la moyenne parmi les valeurs possibles.
+         */
+
         float moyenne = 0;
 
         for (int i = 0; i < eval.Length; i++)
@@ -152,6 +219,11 @@ public class Results_Controller : MonoBehaviour
 
     private int findClosestPossibleValue(float moyenne)
     {
+        /**
+         * @brief Trouve la valeur possible la plus proche d'une moyenne donnée.
+         * @param moyenne La moyenne calculée.
+         * @return La valeur possible la plus proche sous forme d'entier.
+         */
 
         float[] possibleValues = { -1, 0, 1, 2, 3, 5, 8, 13, 20, 40, 100 };
 
@@ -171,6 +243,11 @@ public class Results_Controller : MonoBehaviour
     }
     private void findExtremes()
     {
+        /**
+         * @brief Identifie les valeurs extrêmes (minimale et maximale) parmi les évaluations.
+         * Ignore les valeurs spéciales telles que "?" et "Coffee" dans un premier temp
+         * Ensuite si il y en a que 1 valeur numerique et que des valeur especial ( ? ou Coffee) prend un des 2 valeur especial comme la valeur minimale (Coffee <  ?)
+         */
 
         min = 9999;
         max = 0;
@@ -232,7 +309,10 @@ public class Results_Controller : MonoBehaviour
 
     private void chooseExtremes()
     {
-        //verifie value of min
+        /**
+         * @brief Sélectionne les joueurs associés aux valeurs minimales et maximales, et active les marques correspondantes.
+         */
+    
         string minValue;
 
         if(min == -1)
@@ -289,6 +369,10 @@ public class Results_Controller : MonoBehaviour
 
     public void restart()
     {
+        /**
+         * @brief Réinitialise les données liées au débat et détruit les objets de résultats
+         */
+
         maxDebateSide.Clear();
         minDebateSide.Clear();
 
