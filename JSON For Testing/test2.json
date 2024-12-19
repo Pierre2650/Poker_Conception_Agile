@@ -72,15 +72,15 @@
 
         {
             "Role": "User",
-            "Task": "AAAA",
+            "Task": "Se battre",
             "Obj": "Survivre",
             "Value": "?"
         },
 
         {
             "Role": "Admin",
-            "Task": "AAAA",
-            "Obj": "Cardio",
+            "Task": "Soulever des poids",
+            "Obj": "Muscle",
             "Value": "?"
         }
 
