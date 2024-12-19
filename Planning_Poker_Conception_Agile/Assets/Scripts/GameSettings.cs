@@ -3,8 +3,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**@file
+*@brief Class Description: Script Qui va permetre de charger un fichier JSON avec un Backlog avec des taches a valider et taches deja validee.
+*/
 public static class GameSettings
 {
+    /**@class GameSettings.
+   * @brief Classe qui va servir comme la configuration globale pour sauvegarder les paramètres du jeu. Elle va pouvoir etre accedes entre les differentes Scenes.
+   * 
+   * @var string gameMode
+   * @brief  Mode de jeu selectionne.
+   *
+   * @var int numberOfPlayers
+   * @brief Nombre total de joueurs.
+   *
+   * @var List<string> playerNames
+   * @brief Noms des joueurs.
+   *
+   * @var int[] choiceTimer
+   * @brief Chronometre pour le choix des joueurs.
+   *
+   * @var int[] debateTimer
+   * @brief Chronometre pour les debats.
+   *
+   * @var List<Backlog_Information> backlogList
+   * @brief Liste des tâches dans le backlog.
+   *
+   * @var Backlog_Information taskBeingEvaluated
+   * @brief Tâche actuellement en cours d'evaluation.
+   *
+   * @var int numberOfTasksToEvalute
+   * @brief Nombre total de taches a evaluer.
+   *
+   * @var int numberOfTaskEvaluted
+   * @brief Nombre de taches évaluées.
+   */
+
     public static string gameMode { get; set; } = "Strict";
 
     public static int numberOfPlayers { get; set; } = 0;
@@ -23,6 +57,7 @@ public static class GameSettings
 
     public static void countTasks()
     {
+        ///@brief Methode qui met a jour le nombre total de taches a evaluer et deja evalue
         numberOfTaskEvaluted = 0;
         numberOfTasksToEvalute = 0;
         foreach (Backlog_Information task in backlogList)
@@ -41,6 +76,7 @@ public static class GameSettings
 
     public static void reset()
     {
+        ///@brief Methode qui reinitialise tout les variables
         gameMode = "Strict";
         numberOfPlayers = 0;
         playerNames.Clear();

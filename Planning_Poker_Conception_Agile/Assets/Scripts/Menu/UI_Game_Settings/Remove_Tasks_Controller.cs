@@ -4,18 +4,37 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/**@file
+*@brief Class Description: Script Qui va permetre d'enlever des taches.
+*/
+
 public class Remove_Tasks_Controller : MonoBehaviour
 {
+    /**@class Remove_Tasks_Controller.
+    * @brief Controlleur qui va permetre d'enlever la premiere tache a valider trouver ou le backlog entiere.
+    * 
+    * @var GameObject exception 
+    * @brief Variable qui va contenir le GameObject du champ de texte qui decris une excepetion.
+ 
+    * @var TMP_Text textException
+    * @brief Variable qui  contient la composante texte du GameObject exception.
+    *
+    */
+
     public GameObject exceptions;
     private TMP_Text textException;
 
     private void Start()
     {
+        /**@brief Remplissage des variables grace a ces GameObject correspondants  quand l'objet est cree.
+         */
         textException = exceptions.GetComponent<TMP_Text>();
     }
 
-    public void removeLastTask()
+    public void removeTask()
     {
+        /**@brief Methode utilise par le button "Remove last task". Elle va verifier s'il y en a  un backlog et va trouver et ensuite enlever la premiere Tache a valider posible.
+         */
 
         if (GameSettings.numberOfTasksToEvalute > 0)
         {

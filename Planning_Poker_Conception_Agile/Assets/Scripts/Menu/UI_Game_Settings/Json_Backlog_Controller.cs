@@ -92,7 +92,7 @@ public class Json_Backlog_Controller : MonoBehaviour
             OnFilesSelected(FileBrowser.Result); // FileBrowser.Result is null, if FileBrowser.Success is false
     }
 
-    private void OnFilesSelected(string[] filePaths)
+    public void OnFilesSelected(string[] filePaths)
     {
         /**@param filePaths: le chemin du fichier choisi.
          * 
