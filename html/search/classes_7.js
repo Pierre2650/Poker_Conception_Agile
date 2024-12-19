@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['increase_5fdecrease_5fbuttons_0',['Increase_Decrease_Buttons',['../classIncrease__Decrease__Buttons.html',1,'']]],
-  ['input_5fvalue_5fverification_1',['Input_Value_Verification',['../classInput__Value__Verification.html',1,'']]]
+  ['json_5fbacklog_5fcontroller_0',['Json_Backlog_Controller',['../classJson__Backlog__Controller.html',1,'']]]
 ];
