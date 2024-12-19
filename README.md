@@ -10,4 +10,11 @@ Application Unity pour simuler le "Planning Poker" de la methode agile Scrum pou
 
 ## Test Application
 
+## Utilisation
+
 ## Technologie utilisées
+
+## Credits
+### Auteurs:
+#### Larmat Jean,
+####  Pierre Gatien
