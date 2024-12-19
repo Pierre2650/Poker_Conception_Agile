@@ -1,9 +1,9 @@
 {
     "Backlog":[
         {
-            "Role": "AAAA",
-            "Task": "AAAA",
-            "Obj": "AAA",
+            "Role": "User",
+            "Task": "Regarder un profil",
+            "Obj": "Connecter avec des gens",
             "Value": "8"
         },
 
@@ -20,8 +20,8 @@
 
         {
             "Role": "Admin",
-            "Task": "AAAA",
-            "Obj": "Cardio",
+            "Task": "Manger",
+            "Obj": "Alimenter",
             "Value": "?"
         }
 
