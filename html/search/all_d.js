@@ -6,6 +6,8 @@ var searchData=
   ['reroll_3',['reRoll',['../classCurrent__Task__Selection__Controller.html#a98d8e583dbba7a7e0332a3fed6be1d55',1,'Current_Task_Selection_Controller']]],
   ['results_5fcontroller_4',['Results_Controller',['../classResults__Controller.html',1,'']]],
   ['results_5freview_5fnext_5fcontroller_5',['Results_Review_Next_Controller',['../classResults__Review__Next__Controller.html',1,'']]],
-  ['results_5fscrpt_6',['results_Scrpt',['../classCoffee__Controller.html#a316fa561b14944a51d867a1b1d1387b8',1,'Coffee_Controller']]],
-  ['role_7',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]]
+  ['results_5freview_5fnext_5fcontroller_2ecs_6',['Results_Review_Next_Controller.cs',['../Results__Review__Next__Controller_8cs.html',1,'']]],
+  ['results_5fscrpt_7',['results_Scrpt',['../classCoffee__Controller.html#a316fa561b14944a51d867a1b1d1387b8',1,'Coffee_Controller']]],
+  ['role_8',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]],
+  ['rttogetposition_9',['rtToGetPosition',['../classList__PLY__Results__Controller.html#a01a153e909d4a89217aa43201e1c4c40',1,'List_PLY_Results_Controller']]]
 ];

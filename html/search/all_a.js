@@ -7,7 +7,9 @@ var searchData=
   ['nbtotaltasks_4',['nbTotaltasks',['../classCurrent__Task__Selection__Controller.html#aa5f7591250b89d26bc5628411197841b',1,'Current_Task_Selection_Controller']]],
   ['newcustomtask_5',['newCustomTask',['../classCustom__Tasks.html#a0b641f025e39bd576a072843b41426ec',1,'Custom_Tasks']]],
   ['next_6',['next',['../classGame__settings__Start__Button__Controller.html#ad414df3d7ec26e901309e76dcc6005d0',1,'Game_settings_Start_Button_Controller']]],
-  ['nextui_7',['nextUI',['../classButtons__Controller.html#adfa039b2d8f981cd39aac1b171d99e66',1,'Buttons_Controller']]],
-  ['notecard_8',['noteCard',['../classEnd__Game__Controller.html#af9ebcd24623bf7bc66f18bf453de6c37',1,'End_Game_Controller']]],
-  ['notimerbutton_9',['noTimerButton',['../classDebate__Timer__Controller.html#a7af923ab1a2ae03add8c375b9cf152e8',1,'Debate_Timer_Controller']]]
+  ['nextbutton_7',['nextbutton',['../classResults__Review__Next__Controller.html#af2faa0d14e0955c0b8249ac5b4506108',1,'Results_Review_Next_Controller']]],
+  ['nextstage_8',['nextStage',['../classGo__button__controller.html#ab6b39a7376c2c68db20c2fadaeb3a1f1',1,'Go_button_controller']]],
+  ['nextui_9',['nextUI',['../classButtons__Controller.html#adfa039b2d8f981cd39aac1b171d99e66',1,'Buttons_Controller']]],
+  ['notecard_10',['noteCard',['../classEnd__Game__Controller.html#af9ebcd24623bf7bc66f18bf453de6c37',1,'End_Game_Controller']]],
+  ['notimerbutton_11',['noTimerButton',['../classDebate__Timer__Controller.html#a7af923ab1a2ae03add8c375b9cf152e8',1,'Debate_Timer_Controller']]]
 ];
