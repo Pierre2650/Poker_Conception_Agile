@@ -8,15 +8,21 @@ using UnityEngine;
 
 public class Buttons_Controller : MonoBehaviour
 {
+    /**@class Buttons_Controller.
+     * @brief Controleur des buttons Start Game, credits, Exit game and Next and back en fonction de l'UI actuelle .
+     */
+
     [Header("List of Interfaces")]
     ///@var UIs: Tableau des Interfaces Existantes
      
     public GameObject[] UIs;
 
     [Header("Back Button")]
-    /**@var currentUI: Game object de l'interface actuelle.
-    *@var nextUI: Game object de l'interface suivante.
-    *@var backUI: Game object de l'interface precedente. 
+    /**@var GameObject currentUI @brief Game object de l'interface actuelle.
+    *@var GameObject nextUI 
+    *@brief Game object de l'interface suivante.
+    *@var GameObject backUI 
+    *@brief Game object de l'interface precedente. 
     */
 
     public GameObject currentUI;

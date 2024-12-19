@@ -12,17 +12,21 @@ using NUnit.Framework;
 
 public class Description_Controller : MonoBehaviour
 {
-    /**@Class Description_Controller.
+    /**@class Description_Controller.
      * @brief Controleur de la description en fonction du mode de jeux.
+     * @var descriptionField 
+     * @brief Variable qui va contenir le GameObject du champ de description.
+     * 
+     * @var descriptionText 
+     * @brief Variable qui  contient la composante texte du GameObjet descriptionField
      */
 
-    ///@var descriptionField: Variable qui va contenir le GameObject du champ de description.
-    ///@var descriptionText: Variable qui  contient la composante texte du game objet
+
     public GameObject descriptionField;
     private TMP_Text descriptionText;
     private void Start()
     {
-        ///@brief Remplissage de la variable descriptionText grace a son GameObject descriptionField
+        ///@brief Remplissage des variables grace a son GameObject quand l'objet est cree 
         descriptionText = descriptionField.GetComponent<TMP_Text>();
 
     }
