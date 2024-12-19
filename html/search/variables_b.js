@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['value_0',['Value',['../classBacklog__Information.html#a1a3866cf0ff3cb58b0835e37fc5578db',1,'Backlog_Information']]]
+  ['task_0',['Task',['../classBacklog__Information.html#a2f3cfd3c70832fe123407d27d09abce4',1,'Backlog_Information']]],
+  ['thisui_1',['thisUI',['../classChar__Creation__Manager.html#a02dc5ed824667d340a0a2f97a18b37fe',1,'Char_Creation_Manager']]],
+  ['title_2',['Title',['../classsetGameModeTitle.html#aed90099a7c71fa50079d366b385749e9',1,'setGameModeTitle']]]
 ];

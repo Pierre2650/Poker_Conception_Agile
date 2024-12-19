@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['game_5fsettings_5fnextbutton_5fcontroller_2ecs_0',['Game_settings_NextButton_Controller.cs',['../Game__settings__NextButton__Controller_8cs.html',1,'']]],
-  ['gamesettings_2ecs_1',['GameSettings.cs',['../GameSettings_8cs.html',1,'']]]
+  ['end_5fgame_5fcontroller_2ecs_0',['End_Game_Controller.cs',['../End__Game__Controller_8cs.html',1,'']]]
 ];

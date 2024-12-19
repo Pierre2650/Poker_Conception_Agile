@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['pressback_0',['pressBack',['../classButtons__Controller.html#a3a180bbad722b30c46be9206c96e1a03',1,'Buttons_Controller']]],
-  ['pressexitgame_1',['pressExitGame',['../classButtons__Controller.html#a8c3d8371e12825bbfc911b4ec7e3f5be',1,'Buttons_Controller']]],
-  ['pressnext_2',['pressNext',['../classButtons__Controller.html#a499904226c22aef1ffa1785a5a19579f',1,'Buttons_Controller']]],
-  ['pressstartgame_3',['pressStartGame',['../classButtons__Controller.html#afd0ddda7168305c7b26172d10a61c5d3',1,'Buttons_Controller']]]
+  ['openfileexplorer_0',['openfileexplorer',['../classEnd__Game__Controller.html#af9c4a8fb0cb21bba54b268866a7d4d62',1,'End_Game_Controller.openFileExplorer()'],['../classJson__Backlog__Controller.html#a62d7e8d5e947684ab965549bc5bbfc87',1,'Json_Backlog_Controller.openFileExplorer()']]]
 ];

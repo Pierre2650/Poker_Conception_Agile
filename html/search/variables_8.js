@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_0',['Role',['../classBacklog__Information.html#a7f4a39ec6db87d8467821771658bc03b',1,'Backlog_Information']]]
+  ['playernumber_0',['playerNumber',['../classChar__Creation__Manager.html#a18d4a22e1227e6391667de7884dea0ca',1,'Char_Creation_Manager']]]
 ];
