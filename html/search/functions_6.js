@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['selection_0',['selection',['../classDescription__Controller.html#a301652548143a82756610e5926adbcce',1,'Description_Controller']]],
-  ['startgame_1',['startGame',['../classGame__settings__Start__Button__Controller.html#a349a6008a4385de933a00aeb8ca811e1',1,'Game_settings_Start_Button_Controller']]]
+  ['removetask_0',['removeTask',['../classRemove__Tasks__Controller.html#aa40ffcf0a74b6abeeea659f4447d4b67',1,'Remove_Tasks_Controller']]],
+  ['reroll_1',['reRoll',['../classCurrent__Task__Selection__Controller.html#a98d8e583dbba7a7e0332a3fed6be1d55',1,'Current_Task_Selection_Controller']]]
 ];

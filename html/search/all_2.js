@@ -11,7 +11,9 @@ var searchData=
   ['current_5fnb_5ftasks_8',['Current_NB_Tasks',['../classCurrent__NB__Tasks.html',1,'']]],
   ['current_5fnb_5ftasks_2ecs_9',['Current_NB_Tasks.cs',['../Current__NB__Tasks_8cs.html',1,'']]],
   ['current_5ftask_5fselection_5fcontroller_10',['Current_Task_Selection_Controller',['../classCurrent__Task__Selection__Controller.html',1,'']]],
-  ['custom_5ftasks_11',['Custom_Tasks',['../classCustom__Tasks.html',1,'']]],
-  ['custom_5ftasks_2ecs_12',['Custom_Tasks.cs',['../Custom__Tasks_8cs.html',1,'']]],
-  ['customtwindow_13',['customTWindow',['../classCustom__Tasks.html#ae3b3e30c7973079b89572872828d15eb',1,'Custom_Tasks']]]
+  ['current_5ftask_5fselection_5fcontroller_2ecs_11',['Current_Task_Selection_Controller.cs',['../Current__Task__Selection__Controller_8cs.html',1,'']]],
+  ['currentui_12',['currentUI',['../classButtons__Controller.html#a1f59b1338cff3327f843ce7a215fe70e',1,'Buttons_Controller']]],
+  ['custom_5ftasks_13',['Custom_Tasks',['../classCustom__Tasks.html',1,'']]],
+  ['custom_5ftasks_2ecs_14',['Custom_Tasks.cs',['../Custom__Tasks_8cs.html',1,'']]],
+  ['customtwindow_15',['customTWindow',['../classCustom__Tasks.html#ae3b3e30c7973079b89572872828d15eb',1,'Custom_Tasks']]]
 ];

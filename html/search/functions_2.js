@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['newcustomtask_0',['newCustomTask',['../classCustom__Tasks.html#a0b641f025e39bd576a072843b41426ec',1,'Custom_Tasks']]],
-  ['notimerbutton_1',['noTimerButton',['../classDebate__Timer__Controller.html#a7af923ab1a2ae03add8c375b9cf152e8',1,'Debate_Timer_Controller']]]
+  ['generatenametags_0',['generateNametags',['../classlist__PLY__Names__Controller.html#a374a231e804d19f6e215f42dd7486908',1,'list_PLY_Names_Controller']]],
+  ['gobutton_1',['goButton',['../classGo__button__controller.html#a7988cdea720b80dfb5994c888f9d29ca',1,'Go_button_controller']]]
 ];
