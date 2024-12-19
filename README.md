@@ -46,9 +46,9 @@ L'objectif de cette application est de rendre cette pratique Scrum plus intéres
 7. La **boucle se répète** jusqu’à ce que toutes les tâches soient validées ou que l’application soit fermée.
 
 ## Technologie utilisées
-Unity - Moteur de jeu.
-C# - Langage de programmation pour la logique de l’application.
-Doxygen - Documentation en format web du code (HTML, CSS, JS).
+- **Unity** - Moteur de jeu.
+- **C#** - Langage de programmation pour la logique de l’application.
+- **Doxygen** - Generation documentation en format web du code (HTML, CSS, JS).
 
 ## Credits
 ### Auteurs:
