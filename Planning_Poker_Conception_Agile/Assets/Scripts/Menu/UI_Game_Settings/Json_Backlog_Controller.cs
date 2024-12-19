@@ -18,7 +18,7 @@ public class Json_Backlog_Controller : MonoBehaviour
    * Attention, ce contrôleur implémente un plugin pour la génération d’un explorateur de fichiers, car Unity n’en a pas d’intégré.
    * 
    * @var GameObject exception 
-   * @brief Variable qui va contenir le GameObject du champ de texte qui decris une excepetion.
+   * @brief Variable qui va contenir le GameObject du champ de texte qui decrit une excepetion.
    
    * @var TMP_Text textException
    * @brief Variable qui  contient la composante texte du GameObject exception.
@@ -75,7 +75,7 @@ public class Json_Backlog_Controller : MonoBehaviour
 
     IEnumerator ShowLoadDialogCoroutine()
     {
-        /**@brief Methode de type coroutine qui prendre le chemin du fichier choisi et va declencher la désérialisation  du JSON.
+        /**@brief Methode de type coroutine qui va  prendre le chemin du fichier choisi et va declencher la désérialisation  du JSON.
          */
 
         // Show a load file dialog and wait for a response from user
