@@ -8,7 +8,7 @@ using UnityEngine;
 public class Back_Ground_Singleton : MonoBehaviour
 {
     /**@class Back_Ground_Singleton.
-    * @brief ette classe garantit qu'il n'existe qu'une seule instance de l'objet de fond dans la scène, 
+    * @brief Cette classe garantit qu'il n'existe qu'une seule instance de l'objet de fond dans la scène, 
     * Le background  persiste entre les différentes scènes grâce à la methode `DontDestroyOnLoad`.
     * 
     * @var Back_Ground_Singleton instance
