@@ -41,8 +41,8 @@ L'objectif de cette application est de rendre cette pratique Scrum plus intéres
 5. **Le vote commence** : chaque joueur émet sa propre estimation.
 6. **Résumé des choix des joueurs**.
    1. Si **unanimité** : le match se termine et on choisit la tâche suivante.
-   2. Si **le débat commence**.
-   3. Si **les joueurs choisissent la carte café**.
+   2. Si **Pas n'unanimite**: le débat commence.
+   3. Si **les joueurs choisissent la carte café**: Sauvegarde d'etat courrant du Backlog, choix entre finir, relancer, ou continuer le jeux.
 7. La **boucle se répète** jusqu’à ce que toutes les tâches soient validées ou que l’application soit fermée.
 
 ## Technologie utilisées
