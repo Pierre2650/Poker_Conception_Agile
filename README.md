@@ -52,5 +52,4 @@ L'objectif de cette application est de rendre cette pratique Scrum plus intéres
 
 ## Credits
 ### Auteurs:
-#### Larmat Jean,
-####  Pierre Gatien
+#### Larmat Jean
